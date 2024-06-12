@@ -38,10 +38,10 @@ const LandingPage = () => {
                 <div className="landing_category_card_currency_div">
                     &#8358;
                 </div>
-                <h2>
-                    {props.h2}
-                </h2>
-                <h2>{props.h3}</h2>
+                <div className="landing_category_card_title_div">
+                    <h2>{props.h2}</h2>
+                    <h2>{props.h3}</h2>
+                </div>
                 <ul>
                     <li>{props.l1}</li>
                     <li>{props.l2}</li>
@@ -117,7 +117,9 @@ const LandingPage = () => {
                         <h2>...Building Peaceful and cohesive communities.</h2>
                         <h1>“AJEGUNLE CITY YOUTH MARATHON, 2024”</h1>
                         <p>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
-                        <button>Register now</button>
+                        <div className="landing_hero_btn_holder">
+                            <button>Register now</button>
+                        </div>
                     </div>
                 </div>
                 <div className="landing_ready">
@@ -133,12 +135,12 @@ const LandingPage = () => {
                 <div className="landing_category">
                     <div className="landing_category_wrapper">
                         <h1>CATEGORY OF PARTICIPANTS</h1>
-                        <p>Teams can compete in the following categories;</p>
+                        <p>Teams can compete in the following <span>categories</span>;</p>
                         <div className="landing_category_card_container">
-                            <CategoryCard h2='Master Division Persons with Disability ' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Master Division Persons with Disability ' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Master Division Persons with Disability ' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Master Division Persons with Disability ' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
+                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
+                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
+                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
+                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
 
                         </div>
                     </div>
