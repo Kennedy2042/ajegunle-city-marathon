@@ -9,6 +9,7 @@ import Gallery from './gallery/Gallery'
 import Donate from './donate/Donate'
 import Contact from './contact/Contact'
 import Resources from './resources/Resources'
+import GeneralInfo from './about/general_info/GeneralInfo'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
             <Route path='gallery' element={<Gallery />} />
             <Route path='donate' element={<Donate />} />
             <Route path='contact_us' element={<Contact />} />
+            <Route path='about_general_info' element={<GeneralInfo />} />
           </Route>
         </Routes>
       </HashRouter>

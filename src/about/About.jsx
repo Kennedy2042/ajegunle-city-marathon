@@ -4,6 +4,7 @@ import about3 from '../assets/about3.png'
 import about4 from '../assets/about4.png'
 import about5 from '../assets/about5.png'
 import about6 from '../assets/about6.png'
+import { NavLink } from 'react-router-dom'
 
 
 
@@ -14,7 +15,7 @@ const About = () => {
 
 
   const AboutCard = (props) => {
-    return(
+    return (
       <div className='about_card_body'>
         <div className="about_card_img_div">
           <img src={props.img} alt="committe member" className='about_card_img' />
@@ -36,7 +37,7 @@ const About = () => {
       <div className="about_hero_wrapper">
         <ul className='about_hero_UL'>
           <li>
-            General info
+            <NavLink to={'/about_general_info'}>General info</NavLink>
           </li>
           <li>
             Category of Participants
@@ -98,18 +99,18 @@ const About = () => {
           <h1 className='about_AJYCM_local_committee_body_H1'>Local Organising Committee</h1>
           <p className='about_AJYCM_local_committee_body_P'> Names of LOC Members and short profile</p>
           <div className="about_AJYCM_local_committee_card_body">
-            <AboutCard img={about6} H2='Isaac Moses'/>
-            <AboutCard img={about6} H2='Isaac Success'/>
-            <AboutCard img={about6} H2='Hakeem L. Igiaba'/>
-            <AboutCard img={about6} H2='Prince Ogaga Wowo'/>
-            <AboutCard img={about6} H2='Samuel Kelechi'/>
-            <AboutCard img={about6} H2='Micheal Utedi'/>
-            <AboutCard img={about6} H2='Richard Oghenekome'/>
-            <AboutCard img={about6} H2='Amudalat Temitope'/>
-            <AboutCard img={about6} H2='Godspower O. Ebize'/>
-            <AboutCard img={about6} H2='Ese Uche'/>
-            <AboutCard img={about6} H2='Oghenecaro Lawrence'/>
-            <AboutCard img={about6} H2='McAnthony Anaelechukwu'/>
+            <AboutCard img={about6} H2='Isaac Moses' />
+            <AboutCard img={about6} H2='Isaac Success' />
+            <AboutCard img={about6} H2='Hakeem L. Igiaba' />
+            <AboutCard img={about6} H2='Prince Ogaga Wowo' />
+            <AboutCard img={about6} H2='Samuel Kelechi' />
+            <AboutCard img={about6} H2='Micheal Utedi' />
+            <AboutCard img={about6} H2='Richard Oghenekome' />
+            <AboutCard img={about6} H2='Amudalat Temitope' />
+            <AboutCard img={about6} H2='Godspower O. Ebize' />
+            <AboutCard img={about6} H2='Ese Uche' />
+            <AboutCard img={about6} H2='Oghenecaro Lawrence' />
+            <AboutCard img={about6} H2='McAnthony Anaelechukwu' />
           </div>
 
         </div>
