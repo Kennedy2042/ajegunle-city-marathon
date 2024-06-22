@@ -40,19 +40,23 @@ const About = () => {
             <NavLink to={'/about_general_info'}>General info</NavLink>
           </li>
           <li>
-            Category of Participants
+            <NavLink to={'/about_category_of_participant'}>Category of Participants</NavLink>
           </li>
           <li>
-            How to register
+          <NavLink to={'/about_how_to_register'}>How to register</NavLink>
+            
           </li>
           <li>
-            Routes & Map
+            <NavLink to={'/about_routes_and_map'}>Routes & Map</NavLink>
+            
           </li>
           <li>
-            Prizes
+            <NavLink to={'/about_prizes'}>Prizes</NavLink>
+            
           </li>
           <li>
-            Race Results
+            <NavLink to={'/about_race_result'}>Race Results</NavLink>
+            
           </li>
         </ul>
         <div className="about_hero_img_wrapper">
