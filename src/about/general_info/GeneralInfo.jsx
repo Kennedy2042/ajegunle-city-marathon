@@ -1,8 +1,86 @@
 import './GeneralInfo.css'
 import { HiOutlineArrowLongLeft } from 'react-icons/hi2'
+import route from '../../assets/generalInfo4.png'
+import getInfo from "../../assets/generalInfo2.png"
+import { NavLink } from 'react-router-dom'
 
+
+
+const LearnMore = ({ bgImage, H2 }) => {
+    return (
+
+        <div className='general_learn_more_card_body' style={{ backgroundImage: `url(${bgImage})` }}>
+            <div className="general_learn_more_card_content">
+                <h2 className='general_learn_more_card_content_H2'>
+                    {H2}
+                </h2>
+                <div className="general_learn_more_card_content_div">
+                    <p className='general_learn_more_card_content_P'>Learn more <span className='general_learn_more_card_content_Span'> &rarr;</span></p>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export const GeneralHero = () => {
+    return (
+        <>
+            <div className="general_info_hero_section_wrapper">
+                <div className="general_info_hero_section">
+                    <div className="general_info_hero_section_body">
+                        <p className='general_info_hero_section_body_P'>General info</p>
+                        <h1 className='general_info_hero_section_body_H1'>All what you need to know<br /> about the Ajegunle City youth Marathon</h1>
+                        <div className="general_info_hero_section_bck_btn_wrapper">
+                            <NavLink to={'/about'}>
+                                <p className='general_info_hero_section_bck_btn_P'>Go back</p>
+                                <HiOutlineArrowLongLeft className='general_info_hero_section_bck_btn_Icon' />
+                            </NavLink>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export const GeneralRegister = () => {
+    return (
+        <>
+            <div className="general_info_register_container">
+                <div className="general_info_register_wrapper">
+                    <div className="general_info_register_body">
+                        <div className="general_info_register_main_body">
+                            <div className="general_info_register_main_body_section">
+                                <h1 className='general_info_register_main_body_section_H1'>Register for the 2024 Ajegunle  City youth Marathon</h1>
+                                <p className='general_info_register_main_body_section_P'>Join us at this edition of the Ajegunle City youth Marathon 2024. We are looking forward to have you be a part of this wonderful event.</p>
+                                <button className='general_info_register_main_body_section_btn'>How to register</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+}
+
+export const GeneralLearnMore = () => {
+    return (
+        <>
+            <div className="general_info_learnMore_container">
+                <div className="general_info_learnMore_wrapper">
+                    <LearnMore bgImage="/generalInfo4.png" H2='Training for beginner and regular runners' />
+                    <LearnMore bgImage="/generalInfo5.png" H2='Know more about health tips' />
+                    <LearnMore bgImage="/generalInfo6.png" H2='Prizes' />
+                </div>
+            </div>
+
+        </>
+    )
+}
 
 const GeneralInfo = () => {
+
+
 
     const GeneralInfoCard = (props) => {
         return (
@@ -16,32 +94,19 @@ const GeneralInfo = () => {
         )
     }
 
-    const LearnMore =({bgImage}) => {
-        console.log("bgImage:", bgImage);
-        return(
-            
-            <div className='general_learn_more_card_body' style={{ backgroundImage: `url(${bgImage})` }}></div>        )
-    }
+
 
 
 
     return (
         <div className='general_info_main_body'>
-            <div className="general_info_hero_section_wrapper">
-                <div className="general_info_hero_section">
-                    <div className="general_info_hero_section_body">
-                        <p className='general_info_hero_section_body_P'>General info</p>
-                        <h1 className='general_info_hero_section_body_H1'>All what you need to know<br /> about the Ajegunle City youth Marathon</h1>
-                        <div className="general_info_hero_section_bck_btn_wrapper">
-                            <p className='general_info_hero_section_bck_btn_P'>Go back</p>
-                            <HiOutlineArrowLongLeft className='general_info_hero_section_bck_btn_Icon' />
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <GeneralHero />
+
             <div className="general_info_article_section_mainBody">
                 <div className="general_info_article_section">
-                    <div className="general_info_article_section_img_holder"></div>
+                    <div className="general_info_article_section_img_holder">
+                        <img src={getInfo} alt="athlete" className='general_info_article_section_img' />
+                    </div>
                     <div className="general_info_article_holder">
                         <GeneralInfoCard
                             font=""
@@ -49,7 +114,11 @@ const GeneralInfo = () => {
                             H1='Start & Finish'
                             P='The starting point will be at Maracanã Stadium, Ojokwu Street, Tolu School Complex, Ajegunle Apapa, Lagos. The finish will be at Open Play Ground, Nigeria Army Signals Barracks, By Ojo, Road, Ajegunle, Apapa, lagos.'
                         />
-                        <h1 className='general_info_article_holder_H1'>Start Time</h1>
+                        {/* <h1 className='general_info_article_holder_H1'>Start Time</h1> */}
+                        <GeneralInfoCard
+                            font="'Roboto', sans-serif"
+                            H1='Start Time'
+                        />
                         <GeneralInfoCard
                             font="'Roboto', sans-serif"
                             H1='5KM'
@@ -143,24 +212,18 @@ const GeneralInfo = () => {
                     </div>
                 </div>
             </div>
-            <div className="general_info_register_container">
-                <div className="general_info_register_wrapper">
-                    <div className="general_info_register_body">
-                        <div className="general_info_register_main_body">
-                            <div className="general_info_register_main_body_section">
-                                <h1 className='general_info_register_main_body_section_H1'>Register for the 2024 Ajegunle  City youth Marathon</h1>
-                                <p className='general_info_register_main_body_section_P'>Join us at this edition of the Ajegunle City youth Marathon 2024. We are looking forward to have you be a part of this wonderful event.</p>
-                                <button className='general_info_register_main_body_section_btn'>How to register</button>
-                            </div>
-                        </div>
+            <GeneralRegister />
+<GeneralLearnMore/>
+            <div className="general_find_route_container">
+                <div className="general_find_route_wrapper">
+                    <div className="general_find_route_left_wrapper">
+                        <h1 className='general_find_route_left_wrapper_H1'>Find out the route for runners</h1>
+                        <p className='general_find_route_left_wrapper_P'>Start point/Maracana Stadium - Ojokwu street - Kirikiri road - wilmer link brindge - Oregie mba road - Baale Aderemo street - Boundary road - olowo jeunjeje street- sanusi street - Layinka street - Badia ijora road - Mosafejo road - Ojo road - Signals Barraks/End point.</p>
+                        <button className='general_find_route_left_wrapper_btn'>Explore Routes & Map</button>
                     </div>
-                </div>
-            </div>
-            <div className="general_info_learnMore_container">
-                <div className="general_info_learnMore_wrapper">
-                    <LearnMore bgImage="public/generalInfo4.png"/>
-                    <LearnMore/>
-                    <LearnMore/>
+                    <div className="general_find_route_right_wrapper">
+                        <img src={route} alt="" />
+                    </div>
                 </div>
             </div>
         </div>

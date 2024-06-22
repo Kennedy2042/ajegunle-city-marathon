@@ -10,6 +10,11 @@ import Donate from './donate/Donate'
 import Contact from './contact/Contact'
 import Resources from './resources/Resources'
 import GeneralInfo from './about/general_info/GeneralInfo'
+import CategoyParticipant from './about/category_participant/CategoyParticipant'
+import HowToRegister from './about/howToRegister/HowToRegister'
+import RoadsAndMaps from './about/roadsAndMaps/RoadsAndMaps'
+import Prizes from './about/prizes/Prizes'
+import RaceResult from './about/raceResult/RaceResult'
 
 function App() {
 
@@ -27,6 +32,11 @@ function App() {
             <Route path='donate' element={<Donate />} />
             <Route path='contact_us' element={<Contact />} />
             <Route path='about_general_info' element={<GeneralInfo />} />
+            <Route path='about_category_of_participant' element={<CategoyParticipant />} />
+            <Route path='about_how_to_register' element={<HowToRegister />} />
+            <Route path='about_routes_and_map' element={<RoadsAndMaps />} />
+            <Route path='about_prizes' element={<Prizes />} />
+            <Route path='about_race_result' element={<RaceResult />} />
           </Route>
         </Routes>
       </HashRouter>
