@@ -3,7 +3,7 @@ import { GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/
 const RaceResult = () => {
     return (
         <div>
-            <GeneralHero />
+            <GeneralHero Title={"Race Results"} H1={"Race results for \nAjegunle City youth Marathon"}/>
             <GeneralRegister />
             <GeneralLearnMore />
         </div>

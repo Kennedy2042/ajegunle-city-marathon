@@ -14,6 +14,19 @@ import becomeSponsor from '../assets/becomeSponsor.png'
 import Footer from '../footer/Footer'
 
 
+export const RoadMap = () => {
+    return (
+        <div className="landing_road_map">
+            <div className="landing_road_map_title">
+                Route Map for Ajegunle City Youth Marathon
+            </div>
+            <div className="landing_road_map_img_container">
+                <img src={map} alt="" />
+            </div>
+        </div>
+    )
+}
+
 
 
 const LandingPage = () => {
@@ -155,14 +168,7 @@ const LandingPage = () => {
                     </div>
 
                 </div>
-                <div className="landing_road_map">
-                    <div className="landing_road_map_title">
-                        Route Map for Ajegunle City Youth Marathon
-                    </div>
-                    <div className="landing_road_map_img_container">
-                        <img src={map} alt="" />
-                    </div>
-                </div>
+                <RoadMap />
                 <div className="landing_meet_sponsor">
                     <h1>Meet our sponsors and partners</h1>
                     <div className="landing_meet_sponsor_logo_div">
