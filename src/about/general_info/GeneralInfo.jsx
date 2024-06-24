@@ -22,14 +22,14 @@ const LearnMore = ({ bgImage, H2 }) => {
     )
 }
 
-export const GeneralHero = () => {
+export const GeneralHero = ({H1,Title}) => {
     return (
         <>
             <div className="general_info_hero_section_wrapper">
                 <div className="general_info_hero_section">
                     <div className="general_info_hero_section_body">
-                        <p className='general_info_hero_section_body_P'>General info</p>
-                        <h1 className='general_info_hero_section_body_H1'>All what you need to know<br /> about the Ajegunle City youth Marathon</h1>
+                        <p className='general_info_hero_section_body_P'>{Title}</p>
+                        <h1 className='general_info_hero_section_body_H1' >{H1}</h1>
                         <div className="general_info_hero_section_bck_btn_wrapper">
                             <NavLink to={'/about'}>
                                 <p className='general_info_hero_section_bck_btn_P'>Go back</p>
@@ -100,7 +100,7 @@ const GeneralInfo = () => {
 
     return (
         <div className='general_info_main_body'>
-            <GeneralHero />
+            <GeneralHero Title={"General info"} H1={'All what you need to know \n about the Ajegunle City youth Marathon'}/>
 
             <div className="general_info_article_section_mainBody">
                 <div className="general_info_article_section">
