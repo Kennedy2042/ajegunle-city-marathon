@@ -1,5 +1,6 @@
 import './Footer.css'
 import ajCityMarathon from '../assets/ajegunleCityMarathon.png'
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
@@ -29,7 +30,7 @@ const Footer = () => {
                 <ul>
                     <li>Resources</li>
                     <li>Health Tips</li>
-                    <li>Nutrition Tips</li>
+                    <li><NavLink to={'/nutrition_tips'}>Nutrition Tips</NavLink></li>
                     <li>Training Tips</li>
                     <li>Beginners Training</li>
                     <li>Regular Runners Training</li>
