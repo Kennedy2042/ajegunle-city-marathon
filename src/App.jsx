@@ -15,6 +15,7 @@ import HowToRegister from './about/howToRegister/HowToRegister'
 import RoadsAndMaps from './about/roadsAndMaps/RoadsAndMaps'
 import Prizes from './about/prizes/Prizes'
 import RaceResult from './about/raceResult/RaceResult'
+import NutrtionTip from './resources/nutritionTip/NutrtionTip'
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
             <Route path='about_routes_and_map' element={<RoadsAndMaps />} />
             <Route path='about_prizes' element={<Prizes />} />
             <Route path='about_race_result' element={<RaceResult />} />
+            <Route path='nutrition_tips' element={<NutrtionTip />} />
           </Route>
         </Routes>
       </HashRouter>
