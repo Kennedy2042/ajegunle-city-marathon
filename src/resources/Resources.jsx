@@ -26,7 +26,7 @@ const Resources = () => {
   return (
     <div className='resources_mainBody'>
       <div className="resources_hero_section">
-        <img src={resources} alt="" />
+        <img src={resources} alt="resources" />
       </div>
       <div className="resources_artice_body">
         <h1 className='resources_article_H1'>TRAINING TIPS:</h1>
