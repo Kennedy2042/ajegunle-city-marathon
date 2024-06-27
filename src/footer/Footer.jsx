@@ -29,7 +29,7 @@ const Footer = () => {
                 </ul>
                 <ul>
                     <li>Resources</li>
-                    <li>Health Tips</li>
+                    <li><NavLink to={'/health_tips'}>Health Tips</NavLink></li>
                     <li><NavLink to={'/nutrition_tips'}>Nutrition Tips</NavLink></li>
                     <li>Training Tips</li>
                     <li>Beginners Training</li>
