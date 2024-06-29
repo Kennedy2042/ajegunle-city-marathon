@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css';
+import './HeaderRes.css';
 // import './HeaderMedia.css';
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoMdClose } from 'react-icons/io'
@@ -10,12 +11,12 @@ const Header = () => {
     const [menu, setMenu] = useState(false);
 
     return (
-        <div className='header-main-container'>
-            <div className="header-main-wrapper">
-                <div className="header-logo-container">
+        <div className='header_main_container'>
+            <div className="header_main_wrapper">
+                <div className="header_logo_container">
                     <img src={logo} alt="" />
                 </div>
-                <ul className='header-menu-wrapper'>
+                <ul className='header_menu_wrapper'>
                     <li>
                         <NavLink to={'/'} className={'menu_not_active'}>Home</NavLink>
                     </li>
@@ -41,24 +42,21 @@ const Header = () => {
                         <NavLink to={'/contact_us'} className={'menu_not_active'}>Contact us</NavLink>
                     </li>
                 </ul>
-            </div>
-            <div className="header-main-wrapper-mobile">
-                <div className='header-mobile-logo-container'>
-                    Logo
-                </div>
-                <div className='header-burger-menu-container'>
-                    {
-                        menu ? <IoMdClose
-                            onClick={() => {
-                                setMenu(false);
-                            }}
-                        /> :
-                            <RxHamburgerMenu onClick={() => {
-                                setMenu(true)
-                            }} />}
-                </div>
-                {
-                    menu ? <div className='header-mobile-menu'>
+                <div className="header_main_wrapper_mobile">
+                    <div className='header_burger_menu_container'>
+                        {
+                            menu ? <IoMdClose
+                                onClick={() => {
+                                    setMenu(false);
+                                }}
+                            /> :
+                                <RxHamburgerMenu onClick={() => {
+                                    setMenu(true)
+                                }} />
+                        }
+                    </div>
+                    {/* {
+                    menu ? <div className='header_mobile_menu'>
                         <ul>
                             <li>
                                 <a href="#/">Home</a>
@@ -74,8 +72,10 @@ const Header = () => {
                             </li>
                         </ul>
                     </div> : null
-                }
+                } */}
+                </div>
             </div>
+
         </div>
     )
 }

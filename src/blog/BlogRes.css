@@ -1,0 +1,7 @@
+@media screen and (max-width: 576px) {
+
+    .blog_card_wrapper{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
