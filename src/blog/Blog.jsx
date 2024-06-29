@@ -1,4 +1,5 @@
 import './Blog.css';
+import './BlogRes.css';
 import { IoMdPlay } from 'react-icons/io'
 import blog2 from '../assets/blog2.png'
 
