@@ -1,4 +1,5 @@
 import './Footer.css'
+import './FooterRes.css'
 import ajCityMarathon from '../assets/ajegunleCityMarathon.png'
 import { NavLink } from 'react-router-dom'
 

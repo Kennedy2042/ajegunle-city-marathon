@@ -41,14 +41,11 @@
 }
 
 .general_info_hero_section_body_H1 {
-
     font-size: 60px;
     font-weight: 800;
     line-height: 90px;
-    /* text-align: left; */
     color: rgba(255, 255, 255, 1);
     white-space: pre-line;
-
 }
 
 .general_info_hero_section_bck_btn_wrapper {

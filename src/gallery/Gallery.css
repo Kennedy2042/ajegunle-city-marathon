@@ -14,6 +14,13 @@
     height: 65vh;
     background: url(../assets/contactUs1.png)no-repeat center center;
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
 }
 
 .gallery_hero_writeUp_wrapper {
@@ -25,21 +32,21 @@
     justify-content: space-evenly;
 }
 
-.gallery_hero_writeUp_wrapper h1 {
+.gallery_hero_writeUp_wrapper_h1 {
     font-weight: 700;
     font-size: 34px;
     line-height: 70px;
     color: rgba(7, 7, 7, 1);
 }
 
-.gallery_hero_writeUp_wrapper h2 {
+.gallery_hero_writeUp_wrapper_h2 {
     font-weight: 800;
     font-size: 35px;
     line-height: 70px;
     color: rgba(7, 7, 7, 1);
 }
 
-.gallery_hero_writeUp_wrapper p {
+.gallery_hero_writeUp_wrapper_p {
     font-weight: 400;
     font-size: 27px;
     line-height: 50px;
@@ -72,7 +79,7 @@
     width: 100%;
     height: 70%;
     border-radius: 31.92px 31.92px 0px 0px;
-    background: red;
+    /* background: red; */
     background-position: center;
     background-size: cover;
 }

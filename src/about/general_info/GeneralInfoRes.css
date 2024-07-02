@@ -1,0 +1,42 @@
+@media screen and (max-width: 576px) {
+
+
+    .general_info_hero_section_wrapper {
+        width: 100%;
+        height: 40vh;
+        background: url(../../assets//generalInfo.png) no-repeat center center;
+        background-size: cover;
+    }
+    
+
+    .general_info_hero_section_body_P {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .general_info_hero_section_body_H1 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+    }
+
+
+    .general_info_hero_section_bck_btn_wrapper {
+        width: 35%;
+        /* height: 10%; */
+        /* background: gray; */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .general_info_hero_section_bck_btn_P {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 21.09px;
+    }
+
+    .general_info_hero_section_bck_btn_Icon {
+        font-size: 48px;
+    }
+
+}

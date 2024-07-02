@@ -12,9 +12,9 @@ const Blog = () => {
           <img src={blog2} alt="" />
         </div>
         <div className='blog_write_holder'>
-          <h1>{props.h1}</h1>
-          <p>{props.p}</p>
-          <h2>{props.btn}</h2>
+          <h1 className='blog_write_holder_h1'>{props.h1}</h1>
+          <p className='blog_write_holder_p'>{props.p}</p>
+          <h2 className='blog_write_holder_h2'>{props.btn}</h2>
         </div>
       </div>
     )
@@ -30,9 +30,9 @@ const Blog = () => {
     <div className='blog_main_body'>
       <div className="blog_hero_section">
         <div className="blog_hero_section_content">
-          <h1>Top Stories</h1>
-          <h2>Highlights:</h2>
-          <h2>Previous marathon held</h2>
+          <h1 className='blog_hero_section_content_h1'>Top Stories</h1>
+          <h2 className='blog_hero_section_content_h2'>Highlights:</h2>
+          <h2 className='blog_hero_section_content_h2'>Previous marathon held</h2>
           <div className="blog_hero_section_play_container">
             <IoMdPlay />
           </div>

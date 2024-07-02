@@ -1,4 +1,5 @@
 import './GeneralInfo.css'
+import './GeneralInfoRes.css'
 import { HiOutlineArrowLongLeft } from 'react-icons/hi2'
 import route from '../../assets/generalInfo4.png'
 import getInfo from "../../assets/generalInfo2.png"

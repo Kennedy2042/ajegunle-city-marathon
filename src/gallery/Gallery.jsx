@@ -1,4 +1,5 @@
 import './Gallery.css'
+import './GalleryRes.css'
 import gallery9 from '../assets/gallery9.png'
 import { FaAngleRight } from 'react-icons/fa6'
 import gallery1 from '../assets/gallery1.png'
@@ -38,14 +39,14 @@ const Gallery = () => {
 
   return (
     <div className='gallery_main_body'>
-      <div className="gallery_hero_wrapper"></div>
+      <div className="gallery_hero_wrapper">Our Gallery</div>
       <div className="gallery_hero_writeUp_wrapper">
-        <h1>OUR GALLERY</h1>
-        <h2>Feeling Fit is the joy you get after running</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+        <h1 className='gallery_hero_writeUp_wrapper_h1'>OUR GALLERY</h1>
+        <h2 className='gallery_hero_writeUp_wrapper_h2'>Feeling Fit is the joy you get after running</h2>
+        <p className='gallery_hero_writeUp_wrapper_p'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
       </div>
       <div className="gallery_card_wrapper">
-        <GalleryCard  content='young-happy-athletic-women-running-a-marathon-in-nature-'/>
+        <GalleryCard  content='young-happy-athletic-women-running-a-marathon-in-nature-' img='../assets/gallery1.png'/>
         <GalleryCard  content='Happy-male-athlete-sprinter-in-sport-clothes-emotionally-rejoices-victory-at-the-running-track'/>
         <GalleryCard  content='Friends running and exercise in city with training workout and cardio for health and wellness'/>
         <GalleryCard  content='A young male athlete launching off the start line'/>
