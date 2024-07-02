@@ -23,7 +23,7 @@ const LearnMore = ({ bgImage, H2 }) => {
     )
 }
 
-export const GeneralHero = ({H1,Title}) => {
+export const GeneralHero = ({ H1, Title }) => {
     return (
         <>
             <div className="general_info_hero_section_wrapper">
@@ -101,7 +101,7 @@ const GeneralInfo = () => {
 
     return (
         <div className='general_info_main_body'>
-            <GeneralHero Title={"General info"} H1={'All what you need to know \n about the Ajegunle City youth Marathon'}/>
+            <GeneralHero Title={"General info"} H1={'All what you need to know \n about the Ajegunle City youth Marathon'} />
 
             <div className="general_info_article_section_mainBody">
                 <div className="general_info_article_section">
@@ -214,7 +214,7 @@ const GeneralInfo = () => {
                 </div>
             </div>
             <GeneralRegister />
-<GeneralLearnMore/>
+            <GeneralLearnMore />
             <div className="general_find_route_container">
                 <div className="general_find_route_wrapper">
                     <div className="general_find_route_left_wrapper">
