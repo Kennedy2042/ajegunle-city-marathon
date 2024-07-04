@@ -32,7 +32,7 @@ export const GeneralHero = ({ H1, Title }) => {
                         <p className='general_info_hero_section_body_P'>{Title}</p>
                         <h1 className='general_info_hero_section_body_H1' >{H1}</h1>
                         <div className="general_info_hero_section_bck_btn_wrapper">
-                            <NavLink to={'/about'}>
+                            <NavLink to={'/about'} className={'general_info_navLink'}>
                                 <p className='general_info_hero_section_bck_btn_P'>Go back</p>
                                 <HiOutlineArrowLongLeft className='general_info_hero_section_bck_btn_Icon' />
                             </NavLink>

@@ -56,6 +56,10 @@
     flex-direction: column;
 }
 
+.general_info_navLink{
+    text-decoration: none;
+}
+
 .general_info_hero_section_bck_btn_P {
     font-size: 18px;
     font-weight: 800;

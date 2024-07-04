@@ -14,6 +14,21 @@ import { GoArrowRight } from 'react-icons/go'
 import becomeSponsor from '../assets/becomeSponsor.png'
 import Footer from '../footer/Footer'
 import { NavLink } from 'react-router-dom'
+// import { useLayoutEffect } from 'react';
+// import { useHistory } from 'react-router-dom';
+
+
+
+
+// const history = useHistory();
+
+// useLayoutEffect(() => {
+//   const unlisten = history.listen(() => {
+//     window.scrollTo(0, 0);
+//   });
+//   return unlisten;
+// }, [history]);
+
 
 
 export const RoadMap = () => {

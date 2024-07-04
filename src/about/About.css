@@ -39,6 +39,11 @@
     cursor: pointer;
 }
 
+.about_menu_not_active{
+    color: rgba(38, 38, 38, 1);
+    text-decoration: none;
+}
+
 .about_hero_img_wrapper {
     width: 90%;
     height: 70%;

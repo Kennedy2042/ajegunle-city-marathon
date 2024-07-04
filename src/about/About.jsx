@@ -38,25 +38,25 @@ const About = () => {
       <div className="about_hero_wrapper">
         <ul className='about_hero_UL'>
           <li>
-            <NavLink to={'/about_general_info'}>General info</NavLink>
+            <NavLink to={'/about_general_info'} className={'about_menu_not_active'}>General info</NavLink>
           </li>
           <li>
-            <NavLink to={'/about_category_of_participant'}>Category of Participants</NavLink>
+            <NavLink to={'/about_category_of_participant'} className={'about_menu_not_active'}>Category of Participants</NavLink>
           </li>
           <li>
-            <NavLink to={'/about_how_to_register'}>How to register</NavLink>
+            <NavLink to={'/about_how_to_register'} className={'about_menu_not_active'}>How to register</NavLink>
 
           </li>
           <li>
-            <NavLink to={'/about_routes_and_map'}>Routes & Map</NavLink>
+            <NavLink to={'/about_routes_and_map'} className={'about_menu_not_active'}>Routes & Map</NavLink>
 
           </li>
           <li>
-            <NavLink to={'/about_prizes'}>Prizes</NavLink>
+            <NavLink to={'/about_prizes'} className={'about_menu_not_active'}>Prizes</NavLink>
 
           </li>
           <li>
-            <NavLink to={'/about_race_result'}>Race Results</NavLink>
+            <NavLink to={'/about_race_result'} className={'about_menu_not_active'}>Race Results</NavLink>
 
           </li>
         </ul>
