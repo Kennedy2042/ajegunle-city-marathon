@@ -17,12 +17,14 @@ import Prizes from './about/prizes/Prizes'
 import RaceResult from './about/raceResult/RaceResult'
 import HealthTip from './resources/healthTip/HealthTip'
 import NutritionTip from './resources/nutritionTip/NutritionTip'
+import ScrollToTop from './scrollToTop/ScrollToTop'
 
 function App() {
 
   return (
     <>
       <HashRouter>
+      <ScrollToTop/>
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<LandingPage />} />
