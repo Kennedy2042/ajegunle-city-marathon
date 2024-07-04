@@ -1,4 +1,5 @@
 import './GetInvolve.css'
+import './GetInvolveRes.css'
 import getInvolved1 from '../assets/getInvolved1.png'
 import getInvolved2 from '../assets/getInvolved2.png'
 import getInvolved3 from '../assets/getInvolved3.png'

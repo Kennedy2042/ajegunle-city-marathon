@@ -1,5 +1,6 @@
 import { GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
 import './Prizes.css'
+import './PrizesRes.css'
 import athlete from '../../assets/generalInfo2.png'
 
 
@@ -15,8 +16,8 @@ const Prizes = () => {
                         <img src={athlete} alt="Athlete" className='prizes_article_section_wrapper_img' />
                     </div>
                     <div className="prizes_article_section_wrapper_article_container">
-                        <h1>Prizes</h1>
-                        <p>Participants regardless of diversities shall get the following awards for finishing each of these mileposts:</p>
+                        <h1 className='prizes_article_section_wrapper_article_container_H1'>Prizes</h1>
+                        <p className='prizes_article_section_wrapper_article_container_P'>Participants regardless of diversities shall get the following awards for finishing each of these mileposts:</p>
                         <table style={{ border: '1px solid blue' }}>
                             <thead>
                                 <tr>

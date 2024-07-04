@@ -77,18 +77,6 @@
     margin-bottom: 30px;
 }
 
-.about_AJCYM_project_marathon {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 90%;
-    color: rgba(38, 38, 38, 1);
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 45px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 .about_AJYCM_project_article_wrapper {
     width: 90%;
@@ -113,7 +101,7 @@
     height: 100%;
 }
 
-.about_AJYCM_project_article_right_image_container {
+.about_AJYCM_project_article_right_image_container1 {
     width: 48%;
     height: 80vh;
     display: flex;
@@ -121,7 +109,20 @@
     justify-content: space-between;
 }
 
-.about_AJYCM_project_article_right_image {
+.about_AJYCM_project_article_right_image_container2 {
+    width: 48%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about_AJYCM_project_article_right_image1 {
+    width: 100%;
+    height: 49%;
+}
+
+.about_AJYCM_project_article_right_image2 {
     width: 100%;
     height: 49%;
 }
@@ -131,6 +132,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.about_AJCYM_project_marathon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    color: rgba(38, 38, 38, 1);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .about_AJYCM_project_article_P {

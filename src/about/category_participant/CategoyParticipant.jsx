@@ -1,4 +1,5 @@
 import './CategoyParticipant.css'
+import './CategoyParticipantRes.css'
 import { GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
 import athlete from '../../assets/generalInfo2.png'
 
