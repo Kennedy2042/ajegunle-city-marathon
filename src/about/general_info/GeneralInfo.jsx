@@ -79,6 +79,27 @@ export const GeneralLearnMore = () => {
     )
 }
 
+export const GeneralFindRoute = () => {
+    return (
+        <div className="general_find_route_container">
+            <div className="general_find_route_wrapper">
+                <div className="general_find_route_left_wrapper">
+                    <h1 className='general_find_route_left_wrapper_H1'>Find out the route for runners</h1>
+                    <p className='general_find_route_left_wrapper_P'>Start point/Maracana Stadium - Ojokwu street - Kirikiri road - wilmer link brindge - Oregie mba road - Baale Aderemo street - Boundary road - olowo jeunjeje street- sanusi street - Layinka street - Badia ijora road - Mosafejo road - Ojo road - Signals Barraks/End point.</p>
+                    <button className='general_find_route_left_wrapper_btn'>Explore Routes & Map</button>
+                </div>
+                <div className="general_find_route_right_wrapper">
+                    <img src={route} alt="" />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+
+
+
+
 const GeneralInfo = () => {
 
 
@@ -215,18 +236,7 @@ const GeneralInfo = () => {
             </div>
             <GeneralRegister />
             <GeneralLearnMore />
-            <div className="general_find_route_container">
-                <div className="general_find_route_wrapper">
-                    <div className="general_find_route_left_wrapper">
-                        <h1 className='general_find_route_left_wrapper_H1'>Find out the route for runners</h1>
-                        <p className='general_find_route_left_wrapper_P'>Start point/Maracana Stadium - Ojokwu street - Kirikiri road - wilmer link brindge - Oregie mba road - Baale Aderemo street - Boundary road - olowo jeunjeje street- sanusi street - Layinka street - Badia ijora road - Mosafejo road - Ojo road - Signals Barraks/End point.</p>
-                        <button className='general_find_route_left_wrapper_btn'>Explore Routes & Map</button>
-                    </div>
-                    <div className="general_find_route_right_wrapper">
-                        <img src={route} alt="" />
-                    </div>
-                </div>
-            </div>
+            <GeneralFindRoute />
         </div>
     )
 }

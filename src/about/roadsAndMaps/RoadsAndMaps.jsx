@@ -1,7 +1,7 @@
 import { RoadMap } from '../../landingPage/LandingPage'
 import './RoadsAndMaps.css'
 import './RoadsAndMapsRes.css'
-import { GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
+import { GeneralFindRoute, GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
 import athlete from '../../assets/generalInfo2.png'
 import roadsAndMaps from '../../assets/roadsAndMaps.png'
 
@@ -30,6 +30,7 @@ const RoadsAndMaps = () => {
             <RoadMap />
             <GeneralRegister />
             <GeneralLearnMore />
+            <GeneralFindRoute/>
         </div>
     )
 }

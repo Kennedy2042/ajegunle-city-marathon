@@ -8,7 +8,7 @@
 
 .donate_main_wrapper {
     width: 80%;
-    height: 200vh;
+    /* height: 200vh; */
     margin-top: 100px;
     margin-bottom: 100px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -25,14 +25,14 @@
     justify-content: space-between;
 }
 
-.donate_wrapper h1 {
+.donate_wrapper_H1 {
     font-weight: 900;
     font-size: 40px;
     line-height: 60px;
     color: rgba(31, 227, 169, 1);
 }
 
-.donate_wrapper p {
+.donate_wrapper_P {
     font-weight: 400;
     color: rgba(124, 124, 124, 1);
     font-size: 24px;
@@ -40,7 +40,7 @@
     width: 89%;
 }
 
-.donate_wrapper h2 {
+.donate_wrapper_H2 {
     font-weight: 700;
     font-size: 35px;
     line-height: 52.5px;
@@ -50,13 +50,13 @@
 }
 
 .donate_donation_option {
-    height: 10%;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.donate_donation_option p {
+.donate_donation_option_P {
     color: rgba(124, 124, 124, 1);
     font-weight: 500;
     font-size: 30px;
@@ -99,7 +99,7 @@
     line-height: 45px;
     display: flex;
     flex-direction: column;
-    height: 10%;
+    height: 20vh;
     justify-content: space-evenly;
 }
 
@@ -113,7 +113,7 @@
 
 .donate_name_wrapper {
     width: 90%;
-    height: 10%;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -144,7 +144,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    height: 10%;
+    height: 20vh;
     justify-content: space-evenly;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -164,7 +164,7 @@
 
 .donate_cancel_wrapper {
     width: 90%;
-    height: 10%;
+    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -1,4 +1,4 @@
-import { GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
+import { GeneralFindRoute, GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
 import './RaceResult.css'
 import './RaceResultRes.css'
 import athlete from '../../assets/generalInfo2.png'
@@ -45,6 +45,7 @@ const RaceResult = () => {
             </div>
             <GeneralRegister />
             <GeneralLearnMore />
+            <GeneralFindRoute/>
         </div>
     )
 }

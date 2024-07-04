@@ -1,5 +1,5 @@
 import './HowToRegister.css'
-import { GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
+import { GeneralFindRoute, GeneralHero, GeneralLearnMore, GeneralRegister } from '../general_info/GeneralInfo'
 import athlete from '../../assets/generalInfo2.png'
 const ToRegisterCard = ({ H3, P1, P2 }) => {
     return (
@@ -80,6 +80,7 @@ const HowToRegister = () => {
             </div>
             <GeneralRegister />
             <GeneralLearnMore />
+            <GeneralFindRoute/>
         </div>
     )
 }
