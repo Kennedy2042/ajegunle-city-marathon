@@ -3,11 +3,11 @@ import { GeneralFindRoute, GeneralHero, GeneralLearnMore, GeneralRegister } from
 import athlete from '../../assets/generalInfo2.png'
 const ToRegisterCard = ({ H3, P1, P2 }) => {
     return (
-        <>
-            <h3>{H3}</h3>
-            <p>{P1}</p>
-            <p>{P2}</p>
-        </>
+        <div className='toRegisterCardBody'>
+            <h3 className='toRegisterCardBody_H3'>{H3}</h3>
+            <p className='toRegisterCardBody_P1'>{P1}</p>
+            <p className='toRegisterCardBody_P1'>{P2}</p>
+        </div>
     )
 }
 
@@ -22,8 +22,8 @@ const HowToRegister = () => {
                         <img src={athlete} alt="Athlete" className='how_to_register_article_section_wrapper_img' />
                     </div>
                     <div className="how_to_register_article_section_wrapper_article_container">
-                        <h1>Forms can be picked up with upon proof and confirmation of payment at following Youth Hubs:</h1>
-                        <h1>For group registration, Corporate: Kindly indicate at pick points to obtain the group registration form.</h1>
+                        <h1 className='how_to_register_article_section_wrapper_article_container_H1a'>Forms can be picked up with upon proof and confirmation of payment at following Youth Hubs:</h1>
+                        <h1 className='how_to_register_article_section_wrapper_article_container_H1b'>For group registration, Corporate: Kindly indicate at pick points to obtain the group registration form.</h1>
                         {/* <h3>1. NATIONAL YOUTH COUNCIL OF NIGERIA, AJEROMI-IFELODUN LOCAL CHAPTER (NYCN-AJIF)</h3>
                         <p>Address: C/O, office of the Head of Department, Agriculture, Rural and Youth Social Development, Ifelodun Local Council Development Area Secretariat, Dispensary Street, Mosafejo, Amukoko, Lagos.</p>
                         <p>Tel: + 234 705 640 2139</p>
@@ -61,12 +61,12 @@ const HowToRegister = () => {
                             P1={"Address: 188, Ojo Road, Ligali Bus Stop, Ajegunle, Apapa Lagos."}
                             P2={"Tel: +234 705 692 0659"}
                         />
-                        <h4>ENTRY FEE: <span>One Thousand Naira Only (N1,000.00)</span></h4>
-                        <h4>SUPPORTERS ENTRY FEE: <span>Ten Thousand Naira Only (N10,000.00)</span></h4>
-                        <h4>RAFFLE TICKETS: <span>Five Thousand Naira Only (N5,000.00)</span></h4>
-                        <h5>All payment should be made with reference to Ajegunle Marathon into the official account:</h5>
-                        <h6>SOCIETY FOR INFO AND HUMAN ADV INIT</h6>
-                        <p>1014459817 · Zenith Bank</p>
+                        <h4 className='how_to_register_article_section_wrapper_article_container_H4'><span className='how_to_register_article_section_wrapper_article_container_H4_Span'> ENTRY FEE: </span>One Thousand Naira Only (N1,000.00)</h4>
+                        <h4 className='how_to_register_article_section_wrapper_article_container_H4'><span className='how_to_register_article_section_wrapper_article_container_H4_Span'>SUPPORTERS ENTRY FEE: </span>Ten Thousand Naira Only (N10,000.00)</h4>
+                        <h4 className='how_to_register_article_section_wrapper_article_container_H4'><span className='how_to_register_article_section_wrapper_article_container_H4_Span'>RAFFLE TICKETS: </span>Five Thousand Naira Only (N5,000.00)</h4>
+                        <h5 className='how_to_register_article_section_wrapper_article_container_H5'>All payment should be made with reference to Ajegunle Marathon into the official account:</h5>
+                        <h6 className='how_to_register_article_section_wrapper_article_container_H6'>SOCIETY FOR INFO AND HUMAN ADV INIT</h6>
+                        <p className='how_to_register_article_section_wrapper_article_container_H6_P'>1014459817 · Zenith Bank</p>
                         <h4>Any athlete registered under an athletics federation or body either home or abroad is not eligible to run in the 5km #RunAjegunle race.</h4>
                         <a href="">Click Here to Register for 5Km #RunAjegunle Race</a>
                         <a href="">Click Here to See Rules and Regulations</a>
