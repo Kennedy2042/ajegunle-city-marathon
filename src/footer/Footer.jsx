@@ -7,7 +7,12 @@ const Footer = () => {
     return (
         <div className='footer_mainBody'>
             <div className="footer_wrapper">
-                <img src={ajCityMarathon} alt="" />
+
+                <div className="footer_wrapper_img_holder">
+                    <img src={ajCityMarathon} alt="" />
+
+                </div>
+
                 <ul>
                     <li>About Marathon</li>
                     <li><NavLink to={'/about_general_info'} className={'menu_not_active'}>General info</NavLink></li>
