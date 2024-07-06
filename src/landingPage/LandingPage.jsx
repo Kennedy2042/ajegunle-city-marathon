@@ -10,6 +10,18 @@ import curve from '../assets/theCurve.png'
 import ajegunle from '../assets/ajegunleHub.png'
 import newsImage1 from '../assets/newsImage1.png'
 import newsImage2 from '../assets/newsImage2.png'
+import sponsor1 from '../assets/sponsor1.jpg'
+import sponsor2 from '../assets/sponsor2.png'
+import sponsor3 from '../assets/sponsor3.jpg'
+import sponsor4 from '../assets/sponsor4.png'
+import sponsor5 from '../assets/sponsor5.jpg'
+import sponsor6 from '../assets/sponsor6.png'
+import sponsor7 from '../assets/sponsor7.jpg'
+import sponsor8 from '../assets/sponsor8.jpg'
+import sponsor9 from '../assets/sponsor9.jpg'
+import sponsor10 from '../assets/sponsor10.jpg'
+import sponsor11 from '../assets/sponsor11.jpg'
+import sponsor12 from '../assets/sponsor12.png'
 import { GoArrowRight } from 'react-icons/go'
 import becomeSponsor from '../assets/becomeSponsor.png'
 import Footer from '../footer/Footer'
@@ -145,7 +157,7 @@ const LandingPage = () => {
                 <div className="landing_hero">
                     <div className="landing_hero_wrapper">
                         <h2 className='landing_hero_wrapper_h2'>...Building Peaceful and cohesive communities.</h2>
-                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH MARATHON, 2024”</h1>
+                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH <br /> MARATHON, 2024”</h1>
                         <p className='landing_hero_wrapper_p'>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
                         <div className="landing_hero_btn_holder">
                             <button className='landing_hero_btn'>Register now</button>
@@ -191,8 +203,19 @@ const LandingPage = () => {
                 <div className="landing_meet_sponsor">
                     <h1 className='landing_meet_sponsor_h1'>Meet our sponsors and partners</h1>
                     <div className="landing_meet_sponsor_logo_div">
-                        <img src={curve} alt="the curve" />
-                        <img src={ajegunle} alt="ajegunle logo" />
+                        <img src={sponsor1} alt="SOHAI"  className='landing_meet_sponsor_logo_div_img'/>
+                        <img src={sponsor2} alt="NYCN-AJIF" className='landing_meet_sponsor_logo2'/>
+                        <img src={sponsor3} alt="AJIF Sports Council" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor4} alt=" KOBIS GLOBAL" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor5} alt="THE CURVE" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor6} alt=" KLICK Designs" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor7} alt=" Ajegunle Co-Working Hub" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor8} alt=" NYCN-IFELODUN" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor9} alt="MULA Integrated Concepts" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor10} alt="Heart To Give Initiative" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor11} alt="ANAYD" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor12} alt="smartpadi" className='landing_meet_sponsor_logo_div_img' />
+                        {/* <img src={ajegunle} alt="ajegunle logo" /> */}
                     </div>
                 </div>
                 <div className="landing_news">
