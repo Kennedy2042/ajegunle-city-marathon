@@ -18,6 +18,7 @@ import RaceResult from './about/raceResult/RaceResult'
 import HealthTip from './resources/healthTip/HealthTip'
 import NutritionTip from './resources/nutritionTip/NutritionTip'
 import ScrollToTop from './scrollToTop/ScrollToTop'
+import Registration from './registration/Registration'
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
             <Route path='about_race_result' element={<RaceResult />} />
             <Route path='health_tips' element={<HealthTip />} />
             <Route path='nutrition_tips' element={<NutritionTip />} />
+            <Route path='register' element={<Registration />} />
           </Route>
         </Routes>
       </HashRouter>
