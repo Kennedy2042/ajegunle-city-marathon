@@ -26,23 +26,7 @@ import sponsor10 from '../assets/sponsor10.jpg'
 import sponsor11 from '../assets/sponsor11.jpg'
 import sponsor12 from '../assets/sponsor12.png'
 import { GoArrowRight } from 'react-icons/go'
-// import becomeSponsor from '../assets/becomeSponsor.png'
-// import Footer from '../footer/Footer'
 import { NavLink, useNavigate} from 'react-router-dom'
-// import { useLayoutEffect } from 'react';
-// import { useHistory } from 'react-router-dom';
-
-
-
-
-// const history = useHistory();
-
-// useLayoutEffect(() => {
-//   const unlisten = history.listen(() => {
-//     window.scrollTo(0, 0);
-//   });
-//   return unlisten;
-// }, [history]);
 
 
 
@@ -132,7 +116,7 @@ const LandingPage = () => {
             }}>
                 <img style={{
                     // width: '24px',
-                    // height: '24p',
+                    // height: '24px',
                 }} src={arctIcon} alt="" />
             </div>
         )
@@ -239,7 +223,6 @@ const LandingPage = () => {
                         <img src={sponsor10} alt="Heart To Give Initiative" className='landing_meet_sponsor_logo_div_img' />
                         <img src={sponsor11} alt="ANAYD" className='landing_meet_sponsor_logo_div_img' />
                         <img src={sponsor12} alt="smartpadi" className='landing_meet_sponsor_logo_div_img' />
-                        {/* <img src={ajegunle} alt="ajegunle logo" /> */}
                     </div>
                 </div>
                 <div className="landing_news">
@@ -288,7 +271,6 @@ const LandingPage = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Footer/> */}
             </div>
         </>
     )

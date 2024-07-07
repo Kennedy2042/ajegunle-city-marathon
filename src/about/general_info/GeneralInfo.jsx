@@ -173,7 +173,7 @@ const GeneralInfo = () => {
                         <GeneralInfoCard
                             font="'Roboto', sans-serif"
                             H1='Runners Kits Collection'
-                            P='Bibs containing your unique number will be distributed to registered participants at the Ajeromi-Ifelodun LGA Council Secretariat and Ifelodun LCDA Secretariat, from August 21, 2024 to August 28, 2024 from 9:00 a.m. to 6:00 p.m. daily. Please ensure you collect your bib within the specified days.'
+                            P='Bibs containing your unique number will be distributed to registered participants at the Ajeromi-Ifelodun LGA Council Secretariat and Ifelodun LCDA Secretariat, from November 11, 2024 to November 22, 2024 from 9:00 a.m. to 5:00 p.m. daily. Please ensure you collect your bib within the specified days.'
                         />
                         <GeneralInfoCard
                             font="'Roboto', sans-serif"
