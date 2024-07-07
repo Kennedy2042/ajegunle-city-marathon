@@ -3,7 +3,7 @@ import './LandingPageRes.css'
 import { IoTrophyOutline } from 'react-icons/io5'
 import image2 from '../assets/image2.png'
 import image3 from '../assets/image3.png'
-import image4 from '../assets/image4.png'
+import image4 from '../assets/readyNew.png'
 import arctIcon from '../assets/arcticons_lets-go-fitness.png'
 import map from '../assets/ajegunleMap.png'
 // import curve from '../assets/theCurve.png'
@@ -90,8 +90,12 @@ const LandingPage = () => {
                     <h2 className='landing_category_card_h2'>{props.h3}</h2>
                 </div>
                 <ul>
-                    <li>{props.l1}</li>
-                    <li>{props.l2}</li>
+                    {props.l1 && <li>{props.l1}</li>}
+                    {props.l2 && <li>{props.l2}</li>}
+                    {props.l3 && <li>{props.l3}</li>}
+                    {props.l4 && <li>{props.l4}</li>}
+                    {props.l5 && <li>{props.l5}</li>}
+                    {props.l6 && <li>{props.l6}</li>}
                 </ul>
             </div>
         )
@@ -190,7 +194,7 @@ const LandingPage = () => {
                         <div className="landing_ready_wrapper_card_contain">
                             <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' />
                             <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' />
-                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' />
+                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' />
                         </div>
                     </div>
                 </div>
@@ -200,9 +204,9 @@ const LandingPage = () => {
                         <p className='landing_category_wrapper_p'>Teams can compete in the following <span>categories</span>;</p>
                         <div className="landing_category_card_container">
                             <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
-                            <CategoryCard h2='Master Division  ' h3='Persons with Disability' l1='Wheelchair (all males and females Children under 18-29) 5km' l2='Hand crank (all males age under 18 -29) 2.5km' />
+                            <CategoryCard h2='Open Division (Individuals)  ' h3='Adolescents and Young Persons aged 16 - 35years (5km)' l1='High School Students (all current high school students)' l2='College Students (all current college students)' l3="Youth Self-Employed/Entrepreneurs" l4="Youth out of school/NEET (Not in Education, Employment and Training)" l5="Police or Military (all active duty or retired firemen, policemen or military personnel" l6="Government Agency (all current or retired from same government agency)" />
+                            <CategoryCard h2='Corporate Division (Group/Team)  ' h3='all employees from the same company/organisation (5km)' l1='Male (all males)' l2='Female (all females)' />
+                            <CategoryCard h2='VVIP/VIP Division  ' h3='All Sponsors, Government and Private Partners representatives and Key community stakeholders.' l1='Male (all males)' l2='Female (all females)' />
 
                         </div>
                     </div>

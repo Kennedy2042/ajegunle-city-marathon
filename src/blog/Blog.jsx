@@ -112,19 +112,99 @@ const Blog = () => {
           </div>
         </div>
       ) :
-      img === news1 ? (<><h1>i am working fine</h1></>) : img === news2 ? (<><h2>yes i am workibg</h2></>) : (
-        <>
-          <div className="blog_title_header">Other Top Stories</div>
-          <div className="blog_card_container">
-            <div className="blog_card_wrapper">
-              <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
-              <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
-              <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
-              <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
+        img === news1 ? (<div className="blog_landing_card_body">
+          <div className="blog_landing_card_image_holder">
+            <img src={img} alt="" />
+          </div>
+          <div className="blog_landing_write_holder">
+            <h1 className='blog_landing_write_holder_h1'>{"Venue for the End Point Event Gig of the Ajegunle City Youth Marathon, 2024"}</h1>
+            <p className='blog_landing_write_holder_p'>
+              Finally, the Venue for the End Point Event Gig of the Ajegunle City Youth Marathon, 2024; 30th November, 2024 @The Sports Ground, Nigeria Army Signals Barracks, Mile 2.
+            </p>
+            <p className='blog_landing_write_holder_p'>
+              We want to greatly thank the Commander, Brig. Gen. P.A Zipele and his team, Major Umar, 2IC and Lieut. Yahaya, Admin Officer; for the warm hospitality and reception of the project as a welcomed development and the immense support in collaboration, towards fruitful results ahead.
+            </p>
+            <p className='blog_landing_write_holder_p'>
+              This is a great milestone recorded in our planning process to ensure successful implementation outcomes of the event; aimed to become the largest Youth Engagement Platform in the annals of the NYCN-AJIF Local Branch, to drive social transformation and positive change among youths and advocacy for good governance in Ajeromi-Ifelodun LGA at large.
+            </p>
+            <p className='blog_landing_write_holder_p'>
+              To join our Volunteer Youth Force simply fill out the online registration form: <a href="https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth">https://bit.ly/Volunteer-Registration-Ajegunle-City-Youth</a> , submission closes by July 28th, 2024.
+            </p>
+            <p className='blog_landing_write_holder_p'>
+              It Can Only Get Better!
+            </p>
+            <div className='blog_landing_write_holder_Div'>
+              <ul className='blog_landing_write_holder_Div_Ul'>
+                <li>
+                  #ACYM2024
+                </li>
+                <li>
+                  #RUNAjegunle
+                </li>
+                <li>
+                  #AjegunleMarathon
+                </li>
+                <li>
+                  #AjegunleCity5KRace
+                </li>
+                <li>
+                  #MarathonInMyHood
+                </li>
+                <li>
+                  #CommunityMarathon
+                </li>
+              </ul>
             </div>
           </div>
-        </>
-      )}
+        </div>) : img === news2 ? (<div className="blog_landing_card_body">
+          <div className="blog_landing_card_image_holder">
+            <img src={img} alt="" />
+          </div>
+          <div className="blog_landing_write_holder">
+            <h1 className='blog_landing_write_holder_h1'>{"Ajegunle City Youth Marathon, 2024 - flagged-off"}</h1>
+            <p className='blog_landing_write_holder_p'>
+              The Ajegunle City Youth Marathon is Raging higher as we officially flagged-off the project at the floor of The Ifelodun Local Youth Council Management Committee Meeting.
+              Watch out for the biggest gig ever in the city of Ajegunle,.......Coming Soon!
+            </p>
+            <p className='blog_landing_write_holder_p'>
+              For sponsorship or partnership, Kindly contact the Head of Marketing and Advertisements, Oghenekaro Lawrence: +234 803 270 9217, or Project Director, Isaac Moses: +234 802 644 3165.
+            </p>
+            <div className='blog_landing_write_holder_Div'>
+              <ul className='blog_landing_write_holder_Div_Ul'>
+                <li>
+                  #ACYM2024
+                </li>
+                <li>
+                  #RUNAjegunle
+                </li>
+                <li>
+                  #AjegunleMarathon
+                </li>
+                <li>
+                  #AjegunleCity5KRace
+                </li>
+                <li>
+                  #MarathonInMyHood
+                </li>
+                <li>
+                  #CommunityMarathon
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>) : (
+          <>
+            <div className="blog_title_header">Other Top Stories</div>
+            <div className="blog_card_container">
+              <div className="blog_card_wrapper">
+                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
+                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
+                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
+                <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' />
+              </div>
+            </div>
+          </>
+        )}
     </div>
   )
 }
