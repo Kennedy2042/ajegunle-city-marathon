@@ -5,6 +5,18 @@ import about3 from '../assets/about3.png'
 import about4 from '../assets/about4.png'
 import about5 from '../assets/about5.png'
 import about6 from '../assets/about6.png'
+import commitee1 from '../assets/commitee1.png'
+import commitee2 from '../assets/commitee2.png'
+import commitee3 from '../assets/commitee3.png'
+import commitee4 from '../assets/commitee4.png'
+import commitee5 from '../assets/commitee5.png'
+import commitee6 from '../assets/commitee6.png'
+import commitee7 from '../assets/commitee7.png'
+import commitee8 from '../assets/commitee8.png'
+import commitee9 from '../assets/commitee9.png'
+import commitee10 from '../assets/commitee10.png'
+import commitee11 from '../assets/commitee11.png'
+import commitee12 from '../assets/commitee12.png'
 import { NavLink } from 'react-router-dom'
 
 
@@ -107,18 +119,18 @@ const About = () => {
           <h1 className='about_AJYCM_local_committee_body_H1'>Local Organising Committee</h1>
           <p className='about_AJYCM_local_committee_body_P'> Names of LOC Members and short profile</p>
           <div className="about_AJYCM_local_committee_card_body">
-            <AboutCard img={about6} H2='Isaac Moses' />
-            <AboutCard img={about6} H2='Isaac Success' />
-            <AboutCard img={about6} H2='Hakeem L. Igiaba' />
-            <AboutCard img={about6} H2='Prince Ogaga Wowo' />
-            <AboutCard img={about6} H2='Samuel Kelechi' />
-            <AboutCard img={about6} H2='Micheal Utedi' />
-            <AboutCard img={about6} H2='Richard Oghenekome' />
-            <AboutCard img={about6} H2='Amudalat Temitope' />
-            <AboutCard img={about6} H2='Godspower O. Ebize' />
-            <AboutCard img={about6} H2='Ese Uche' />
-            <AboutCard img={about6} H2='Oghenecaro Lawrence' />
-            <AboutCard img={about6} H2='McAnthony Anaelechukwu' />
+            <AboutCard img={commitee1} H2='Isaac Moses' />
+            <AboutCard img={commitee2} H2='AMB. ISAAC SUCCESS OMOYELE' />
+            <AboutCard img={commitee3} H2='COMRD. PRINCE ADEMOLA IGI-ABA LAWAL' />
+            <AboutCard img={commitee4} H2='HON. MC.ANTHONY ANAELECHUKWU' />
+            <AboutCard img={commitee5} H2='PRINCE OGAGA WOWO' />
+            <AboutCard img={commitee6} H2='OGHENEKARO RACHEAL LAWRENCE' />
+            <AboutCard img={commitee7} H2='SAMUEL KELECHI' />
+            <AboutCard img={commitee8} H2='OGHENEKOME RICHARD' />
+            <AboutCard img={commitee9} H2='MICHAEL UTEDI' />
+            <AboutCard img={commitee10} H2="ESE UCHE GOD'S-WILL" />
+            <AboutCard img={commitee11} H2='HON. AMUDALAT TEMITOPE OLOOLA' />
+            <AboutCard img={commitee12} H2='GODSPOWER  O. EBIZE' />
           </div>
 
         </div>
