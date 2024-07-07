@@ -6,10 +6,13 @@ import image3 from '../assets/image3.png'
 import image4 from '../assets/image4.png'
 import arctIcon from '../assets/arcticons_lets-go-fitness.png'
 import map from '../assets/ajegunleMap.png'
-import curve from '../assets/theCurve.png'
-import ajegunle from '../assets/ajegunleHub.png'
-import newsImage1 from '../assets/newsImage1.png'
-import newsImage2 from '../assets/newsImage2.png'
+// import curve from '../assets/theCurve.png'
+// import ajegunle from '../assets/ajegunleHub.png'
+// import newsImage1 from '../assets/newsImage1.png'
+// import newsImage2 from '../assets/newsImage2.png'
+import news1 from '../assets/news1.jpg'
+import news2 from '../assets/news2.jpg'
+import news3 from '../assets/news3.jpg'
 import sponsor1 from '../assets/sponsor1.jpg'
 import sponsor2 from '../assets/sponsor2.png'
 import sponsor3 from '../assets/sponsor3.jpg'
@@ -23,9 +26,9 @@ import sponsor10 from '../assets/sponsor10.jpg'
 import sponsor11 from '../assets/sponsor11.jpg'
 import sponsor12 from '../assets/sponsor12.png'
 import { GoArrowRight } from 'react-icons/go'
-import becomeSponsor from '../assets/becomeSponsor.png'
-import Footer from '../footer/Footer'
-import { NavLink } from 'react-router-dom'
+// import becomeSponsor from '../assets/becomeSponsor.png'
+// import Footer from '../footer/Footer'
+import { NavLink, useNavigate} from 'react-router-dom'
 // import { useLayoutEffect } from 'react';
 // import { useHistory } from 'react-router-dom';
 
@@ -59,6 +62,8 @@ export const RoadMap = () => {
 
 
 const LandingPage = () => {
+    const nav = useNavigate()
+
 
 
     const ReadyCard = (props) => {
@@ -129,21 +134,36 @@ const LandingPage = () => {
         )
     }
 
-    const Newscard = (props) => {
+
+
+
+    const Newscard = ({img, H4, Span, content }) => {
+
+
+        const handleClick = () => {
+            nav('/blog', {
+                state: {
+                    img, H4, Span, content 
+                },
+            });
+        };
+
+
+
         return (
             <div className='landing_news_card'>
                 <div className="landing_news_img_container">
-                    <img src={props.img} alt="" />
+                    <img src={img} alt="" />
                 </div>
                 <div className="landing_news_article">
                     <div className="landing_news_article_header">
-                        <h4 className='landing_news_article_header_h4'>March 20, 2024 / <span className='landing_news_article_header_span'>News</span></h4>
+                        <h4 className='landing_news_article_header_h4'>{H4} <span className='landing_news_article_header_span'>{Span}</span></h4>
                     </div>
                     <div className="landing_news_article_content">
-                        Lorem ipsum dolor sit amet, consectetur adipis cing elit Lorem ipsum dolor sit amet, consectcetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        {content}
                     </div>
                     <div className="landing_news_article_btn">
-                        <span className='landing_news_article_btn_span'>View all <GoArrowRight /></span>
+                        <button className='landing_news_article_btn_span' onClick={handleClick}>View all <GoArrowRight /></button>
                     </div>
                 </div>
             </div>
@@ -203,8 +223,8 @@ const LandingPage = () => {
                 <div className="landing_meet_sponsor">
                     <h1 className='landing_meet_sponsor_h1'>Meet our sponsors and partners</h1>
                     <div className="landing_meet_sponsor_logo_div">
-                        <img src={sponsor1} alt="SOHAI"  className='landing_meet_sponsor_logo_div_img'/>
-                        <img src={sponsor2} alt="NYCN-AJIF" className='landing_meet_sponsor_logo2'/>
+                        <img src={sponsor1} alt="SOHAI" className='landing_meet_sponsor_logo_div_img' />
+                        <img src={sponsor2} alt="NYCN-AJIF" className='landing_meet_sponsor_logo2' />
                         <img src={sponsor3} alt="AJIF Sports Council" className='landing_meet_sponsor_logo_div_img' />
                         <img src={sponsor4} alt=" KOBIS GLOBAL" className='landing_meet_sponsor_logo_div_img' />
                         <img src={sponsor5} alt="THE CURVE" className='landing_meet_sponsor_logo_div_img' />
@@ -221,9 +241,24 @@ const LandingPage = () => {
                 <div className="landing_news">
                     <h1 className='landing_news_h1'>News and updates</h1>
                     <div className="landing_news_wrapper">
-                        <Newscard img={newsImage1} />
-                        <Newscard img={newsImage2} />
-                        <Newscard img={newsImage1} />
+                        <Newscard
+                            H4={"AJCYM 2024 -"}
+                            Span={"End Point"}
+                            img={news1}
+                            content={"The Venue for the End Point Event Gig of the Ajegunle City Youth Marathon, 2024; 30th November, 2024 @The Sports Ground, Nigeria Army Signals Barracks, Mile 2."}
+                        />
+                        <Newscard
+                            H4={"AJCYM 2024 -"}
+                            Span={"Flag-Off"}
+                            img={news2}
+                            content={"The Ajegunle City Youth Marathon is Raging higher as we officially flagged-off the project at the floor of The Ifelodun Local Youth Council Management Committee Meeting. Watch out for the biggest gig ever in the city of Ajegunle,.......Coming Soon!"}
+                        />
+                        <Newscard
+                            img={news3}
+                            H4={"AJCYM 2024 -"}
+                            Span={"Volunteer Registration!"}
+                            content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
+                        />
                     </div>
                     <btn className="landing_news_view_more_btn">View more post</btn>
                 </div>
@@ -243,7 +278,7 @@ const LandingPage = () => {
                                     <li>Diamond</li>
                                 </ul>
                                 <button className='landing_become_a_sponsor_wrapper_2_button'>
-                                <NavLink to={"/contact_us"} className={'menu_not_active'}>Contact us</NavLink>
+                                    <NavLink to={"/contact_us"} className={'menu_not_active'}>Contact us</NavLink>
                                 </button>
                             </div>
                         </div>

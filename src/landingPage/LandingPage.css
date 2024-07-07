@@ -430,7 +430,7 @@
 }
 
 .landing_news_article_header {
-    width: 85%;
+    /* width: 85%; */
     height: 20%;
     display: flex;
     align-items: center;
@@ -441,6 +441,7 @@
     font-weight: 700;
     font-size: 18px;
     color: rgba(89, 84, 84, 1);
+    text-align: center;
 }
 
 .landing_news_article_header_span {
@@ -454,6 +455,7 @@
     font-size: 14px;
     line-height: 21px;
     color: rgba(38, 38, 38, 1);
+    overflow: auto;
 }
 
 .landing_news_article_btn {
@@ -471,6 +473,8 @@
     line-height: 16.41px;
     color: rgba(118, 191, 208, 1);
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .landing_news_view_more_btn {
