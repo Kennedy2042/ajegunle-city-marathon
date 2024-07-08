@@ -26,7 +26,7 @@ import sponsor10 from '../assets/sponsor10.jpg'
 import sponsor11 from '../assets/sponsor11.jpg'
 import sponsor12 from '../assets/sponsor12.png'
 import { GoArrowRight } from 'react-icons/go'
-import { Link, NavLink, useNavigate} from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 
 
 
@@ -44,14 +44,14 @@ export const RoadMap = () => {
     )
 }
 
-export const Newscard = ({img, H4, Span, content }) => {
+export const Newscard = ({ img, H4, Span, content }) => {
     const nav = useNavigate()
 
 
     const handleClick = () => {
         nav('/blog', {
             state: {
-                img, H4, Span, content 
+                img, H4, Span, content
             },
         });
     };
@@ -182,7 +182,7 @@ const LandingPage = () => {
                         <div className="landing_ready_wrapper_card_contain">
                             <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' tag={"/register"} />
                             <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' tag={"https://paystack.com/buy/PROD_vxkwxr3edops7u9"} />
-                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' tag={"https://paystack.com/pay/o7t1hpl2mt"}/>
+                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' tag={"https://paystack.com/pay/o7t1hpl2mt"} />
                         </div>
                     </div>
                 </div>
@@ -210,7 +210,16 @@ const LandingPage = () => {
 
                 </div>
                 <div className="landing_page_map_container">
-                    <RoadMap />
+                    {/* <RoadMap /> */}
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.222631862073!2d3.352426541093896!3d6.443926885278919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bcc76eaf46b%3A0xe296700d8fa9e6f2!2sAjegunle%2C%20Ikeja%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720429094726!5m2!1sen!2sng"
+                        width="100%"
+                        height="600"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                    />
                 </div>
                 <div className="landing_meet_sponsor">
                     <h1 className='landing_meet_sponsor_h1'>Meet our sponsors and partners</h1>
@@ -251,7 +260,7 @@ const LandingPage = () => {
                             content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
                         />
                     </div>
-                    <btn className="landing_news_view_more_btn" onClick={()=>nav("/blog")}>View more post</btn>
+                    <btn className="landing_news_view_more_btn" onClick={() => nav("/blog")}>View more post</btn>
                 </div>
                 <div className="landing_become_a_sponsor">
                     <div className="landing_become_a_sponsor_wrapper">
@@ -268,9 +277,11 @@ const LandingPage = () => {
                                     <li>Platinum</li>
                                     <li>Diamond</li>
                                 </ul>
-                                <button className='landing_become_a_sponsor_wrapper_2_button'>
-                                    <NavLink to={"/contact_us"} className={'menu_not_active'}>Contact us</NavLink>
-                                </button>
+                                <NavLink to={"/contact_us"} className={'menu_not_active_wrapper2'}>
+                                    <button className='landing_become_a_sponsor_wrapper_2_button'>
+                                        Contact us
+                                    </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>

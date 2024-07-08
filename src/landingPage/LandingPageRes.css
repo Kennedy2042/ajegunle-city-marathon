@@ -2,7 +2,7 @@
 
 
     .landing_hero {
-        /* height: 40vh; */
+        min-height: 40vh;
     }
 
     .landing_hero_wrapper {

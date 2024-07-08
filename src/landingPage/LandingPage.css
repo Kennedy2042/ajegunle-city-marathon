@@ -499,6 +499,7 @@
     font-size: 16px;
     color: rgba(23, 150, 183, 1);
     margin: 0px 0px 60px 0px;
+    cursor: pointer;
 }
 
 .landing_become_a_sponsor {
@@ -596,5 +597,13 @@
     font-size: 18px;
     line-height: 21.09px;
     color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 
+}
+
+.menu_not_active_wrapper2{
+    /* width: 177px; */
+    /* height: 57px; */
+    /* color: rgba(255, 255, 255, 1); */
+    /* text-decoration: none; */
 }

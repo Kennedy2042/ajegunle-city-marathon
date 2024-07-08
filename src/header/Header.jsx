@@ -27,11 +27,14 @@ const Header = () => {
         <div className='header_main_container'>
             <div className="header_main_wrapper">
                 <div className="header_logo_container">
-                    <img src={logo} alt="Logo" className='header_logo' />
+                    {/* <img src={logo} alt="Logo" className='header_logo' /> */}
+                    <NavLink to={"/"} className={'menu_not_active'}>
+                        <img src={logo} alt="Logo" className='header_logo' />
+                    </NavLink>
                 </div>
                 <ul className='header_menu_wrapper'>
                     {
-                        routes.map((route)=>(
+                        routes.map((route) => (
                             <li key={route.path}>
                                 <NavLink to={route.path} className={'menu_not_active'} >{route.name}</NavLink>
 
@@ -53,20 +56,20 @@ const Header = () => {
                         }
                     </div>
                     {
-                    menu ? <div className='header_mobile_menu'>
-                        <ul className='header_mobile_menu_Ul'>
-                        {
-                        routes.map((route)=>(
-                            <li key={route.path}>
-                                <NavLink to={route.path} className={'menu_not_active'} onClick={()=>{
-                                    setMenu(false)
-                                }}>{route.name}</NavLink>
-                            </li>
-                        ))
+                        menu ? <div className='header_mobile_menu'>
+                            <ul className='header_mobile_menu_Ul'>
+                                {
+                                    routes.map((route) => (
+                                        <li key={route.path}>
+                                            <NavLink to={route.path} className={'menu_not_active'} onClick={() => {
+                                                setMenu(false)
+                                            }}>{route.name}</NavLink>
+                                        </li>
+                                    ))
+                                }
+                            </ul>
+                        </div> : null
                     }
-                        </ul>
-                    </div> : null
-                } 
                 </div>
             </div>
 
