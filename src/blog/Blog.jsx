@@ -7,10 +7,14 @@ import news2 from '../assets/news2.jpg';
 import news3 from '../assets/news3.jpg';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Newscard } from '../landingPage/LandingPage';
+import { useEffect } from 'react';
 
 const Blog = () => {
   const location = useLocation();
   const { img, H4, Span, content } = location.state || {};
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [img]);
 
   const BlogCard = (props) => {
     return (
@@ -200,24 +204,24 @@ const Blog = () => {
                 <BlogCard h1='NBA PLAYOFF X-FACTOR' p='the NBA is on a ' btn='Read more' /> */}
 
                 {/* <div className="landing_news_wrapper"> */}
-                  <Newscard
-                    H4={"AJCYM 2024 -"}
-                    Span={"End Point"}
-                    img={news1}
-                    content={"The Venue for the End Point Event Gig of the Ajegunle City Youth Marathon, 2024; 30th November, 2024 @The Sports Ground, Nigeria Army Signals Barracks, Mile 2."}
-                  />
-                  <Newscard
-                    H4={"AJCYM 2024 -"}
-                    Span={"Flag-Off"}
-                    img={news2}
-                    content={"The Ajegunle City Youth Marathon is Raging higher as we officially flagged-off the project at the floor of The Ifelodun Local Youth Council Management Committee Meeting. Watch out for the biggest gig ever in the city of Ajegunle,.......Coming Soon!"}
-                  />
-                  <Newscard
-                    img={news3}
-                    H4={"AJCYM 2024 -"}
-                    Span={"Volunteer Registration!"}
-                    content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
-                  />
+                <Newscard
+                  H4={"AJCYM 2024 -"}
+                  Span={"End Point"}
+                  img={news1}
+                  content={"The Venue for the End Point Event Gig of the Ajegunle City Youth Marathon, 2024; 30th November, 2024 @The Sports Ground, Nigeria Army Signals Barracks, Mile 2."}
+                />
+                <Newscard
+                  H4={"AJCYM 2024 -"}
+                  Span={"Flag-Off"}
+                  img={news2}
+                  content={"The Ajegunle City Youth Marathon is Raging higher as we officially flagged-off the project at the floor of The Ifelodun Local Youth Council Management Committee Meeting. Watch out for the biggest gig ever in the city of Ajegunle,.......Coming Soon!"}
+                />
+                <Newscard
+                  img={news3}
+                  H4={"AJCYM 2024 -"}
+                  Span={"Volunteer Registration!"}
+                  content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
+                />
                 {/* </div> */}
               </div>
             </div>
