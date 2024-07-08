@@ -1,7 +1,9 @@
 import { IoMdPlay } from 'react-icons/io'
 import './About.css'
 import './AboutRes.css'
-import about3 from '../assets/about3.png'
+import oba1 from '../assets/oba1.jpg'
+import oba2 from '../assets/oba2.png'
+import oba3 from '../assets/oba3.png'
 import about4 from '../assets/about4.png'
 import about5 from '../assets/about5.png'
 import about6 from '../assets/about6.png'
@@ -35,7 +37,7 @@ const About = () => {
         </div>
         <div className="about_card_name_committe_wrapper">
           <h2 className='about_card_name_committe_H2'>{props.H2}</h2>
-          <p className='about_card_name_committe_P'>Click here to view profile</p>
+          <p className='about_card_name_committe_P'>{props.P}</p>
         </div>
       </div>
     )
@@ -89,11 +91,21 @@ const About = () => {
       <div className="about_AJYCM_project_article_wrapper">
         <div className="about_AJYCM_project_article_image_wrapper">
           <div className="about_AJYCM_project_article_left_image_container1">
-            <img src={about3} alt="athlete" className='about_AJYCM_project_article_left_image' />
+            <img src={oba1} alt="athlete" className='about_AJYCM_project_article_left_image' />
+            <p className='about_AJYCM_project_article_right_image_container2_P1'>HIS ROYAL MAJESTY
+              OBA MOROOF OYEKUNLE ATANDA
+              AMODU TIJANI (AMORE III)
+              OLU OF IWA AND APAPA KINGDOM</p>
           </div>
           <div className="about_AJYCM_project_article_right_image_container2">
-            <img src={about4} alt="athlete" className='about_AJYCM_project_article_right_image1' />
-            <img src={about5} alt="athlete" className='about_AJYCM_project_article_right_image2' />
+            <img src={oba2} alt="athlete" className='about_AJYCM_project_article_right_image1' />
+            <p className='about_AJYCM_project_article_right_image_container2_P1'>HON. FATAI ADEKUNLE AYOOLA
+              EXECUTIVE CHAIRMAN
+              AJEROMI-IFELODUN LGA</p>
+            <img src={oba3} alt="athlete" className='about_AJYCM_project_article_right_image2' />
+            <p>HON. OLUFEMI OKEOWO AKANBI
+              EXECUTIVE CHAIRMAN
+              IFELODUN LCDA</p>
           </div>
         </div>
         <div className="about_AJYCM_project_article">
@@ -119,18 +131,18 @@ const About = () => {
           <h1 className='about_AJYCM_local_committee_body_H1'>Local Organising Committee</h1>
           <p className='about_AJYCM_local_committee_body_P'> Names of LOC Members and short profile</p>
           <div className="about_AJYCM_local_committee_card_body">
-            <AboutCard img={commitee1} H2='Isaac Moses' />
-            <AboutCard img={commitee2} H2='AMB. ISAAC SUCCESS OMOYELE' />
-            <AboutCard img={commitee3} H2='COMRD. PRINCE ADEMOLA IGI-ABA LAWAL' />
-            <AboutCard img={commitee4} H2='HON. MC.ANTHONY ANAELECHUKWU' />
-            <AboutCard img={commitee5} H2='PRINCE OGAGA WOWO' />
-            <AboutCard img={commitee6} H2='OGHENEKARO RACHEAL LAWRENCE' />
-            <AboutCard img={commitee7} H2='SAMUEL KELECHI' />
-            <AboutCard img={commitee8} H2='OGHENEKOME RICHARD' />
-            <AboutCard img={commitee9} H2='MICHAEL UTEDI' />
-            <AboutCard img={commitee10} H2="ESE UCHE GOD'S-WILL" />
-            <AboutCard img={commitee11} H2='HON. AMUDALAT TEMITOPE OLOOLA' />
-            <AboutCard img={commitee12} H2='GODSPOWER  O. EBIZE' />
+            <AboutCard img={commitee1} H2='Isaac Moses' P={"GENERAL SECRETARY, NYCN-AJIF/PROJECT LEAD, ACYM2024"} />
+            <AboutCard img={commitee2} H2='AMB. ISAAC SUCCESS OMOYELE' P={"COORDINATOR, NYCN-AJIF/YOUTH HOST & HEAD OF PUBLIC RELATIONS, AJCYM2024"} />
+            <AboutCard img={commitee3} H2='COMRD. PRINCE ADEMOLA IGI-ABA LAWAL' P={"COORDINATOR, NYCN-IFELODUN/YOUTH CO-HOST & HEAD OF COMMUNITY MOBILIZATION, ACYM2024"} />
+            <AboutCard img={commitee4} H2='HON. MC.ANTHONY ANAELECHUKWU' P={"DIRECTOR GENERAL, AJEROMI-IFELODUN SPORTS COUNCIL/TECHNICAL ADVISOR & CHIEF OFFICIAL, ACYM2024"} />
+            <AboutCard img={commitee5} H2='PRINCE OGAGA WOWO' P={"CEO, KOBIS GLOBAL/STRATEGIC MEDIA & COMMUNICATIONS LEAD ACYM2024"} />
+            <AboutCard img={commitee6} H2='OGHENEKARO RACHEAL LAWRENCE' P={"GENDER ADVOCACY FOCAL POINT, SOHAI/HEAD OF MARKETING & ADVERTISEMENT, ACYM2024"} />
+            <AboutCard img={commitee7} H2='SAMUEL KELECHI' P={"CEO, THE CURVE/ICT & STRATEGIC KNOWLEDGE MANAGEMENT LEAD, ACYM2024"} />
+            <AboutCard img={commitee8} H2='OGHENEKOME RICHARD' P={"PROJECT DIRECTOR, SOHAI/QUALITY ASSURANCE LEAD, ACYM2024"} />
+            <AboutCard img={commitee9} H2='MICHAEL UTEDI' P={"CEO, MULA INTEGRATED CONCEPT/LOGISTIC & SUPPLY LEAD, ACYM2024"} />
+            <AboutCard img={commitee10} H2="ESE UCHE GOD'S-WILL" P={"CEO, KLICK DESIGNS/CONTENT MANAGEMENT AND BRANDING LEAD, ACYM2024"} />
+            <AboutCard img={commitee11} H2='HON. AMUDALAT TEMITOPE OLOOLA' P={"SOCIAL SECREATRY, NYCN-IFELODUN/VOLUNTEER COORDINATOR, ACYM2024"} />
+            <AboutCard img={commitee12} H2='GODSPOWER  O. EBIZE' P={"CEO, KODED LAFF ENTERTAINMENT/MARKETING & PUBLICITY"} />
           </div>
 
         </div>

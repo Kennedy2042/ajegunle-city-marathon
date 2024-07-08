@@ -96,14 +96,14 @@
 
 }
 
-.about_AJYCM_project_article_left_image_container {
+.about_AJYCM_project_article_left_image_container1 {
     width: 50%;
     height: 80vh;
 }
 
 .about_AJYCM_project_article_left_image {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    /* height: 30%; */
 }
 
 .about_AJYCM_project_article_right_image_container1 {
@@ -240,15 +240,15 @@
     color: rgba(38, 38, 38, 1);
     font-weight: 800;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 21.09px;
 }
 
 .about_card_name_committe_P {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 18.75px;
     font-family: 'Roboto', sans-serif;
-    color: rgba(23, 150, 183, 1);
-    text-decoration: underline;
+    /* color: rgba(23, 150, 183, 1); */
+    /* text-decoration: underline; */
 }
