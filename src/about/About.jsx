@@ -92,8 +92,8 @@ const About = () => {
         <div className="about_AJYCM_project_article_image_wrapper">
           <div className="about_AJYCM_project_article_left_image_container1">
             <img src={oba1} alt="athlete" className='about_AJYCM_project_article_left_image' />
-            <p className='about_AJYCM_project_article_right_image_container2_P1'>HIS ROYAL MAJESTY
-              OBA MOROOF OYEKUNLE ATANDA
+            <p className='about_AJYCM_project_article_right_image_container2_P1'><span className='about_AJYCM_project_article_right_image_container2_P1_Span'>HIS ROYAL MAJESTY </span>
+              <br />OBA MOROOF OYEKUNLE ATANDA
               AMODU TIJANI (AMORE III)
               OLU OF IWA AND APAPA KINGDOM</p>
           </div>
@@ -103,7 +103,7 @@ const About = () => {
               EXECUTIVE CHAIRMAN
               AJEROMI-IFELODUN LGA</p>
             <img src={oba3} alt="athlete" className='about_AJYCM_project_article_right_image2' />
-            <p>HON. OLUFEMI OKEOWO AKANBI
+            <p style={{textAlign: "center"}}>HON. OLUFEMI OKEOWO AKANBI
               EXECUTIVE CHAIRMAN
               IFELODUN LCDA</p>
           </div>
