@@ -247,7 +247,7 @@ const LandingPage = () => {
                         <Newscard
                             img={news3}
                             H4={"AJCYM 2024 -"}
-                            Span={"Volunteer Registration!"}
+                            Span={"Volunteer!"}
                             content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
                         />
                     </div>
