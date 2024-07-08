@@ -39,7 +39,7 @@
     cursor: pointer;
 }
 
-.about_menu_not_active{
+.about_menu_not_active {
     color: rgba(38, 38, 38, 1);
     text-decoration: none;
 }
@@ -106,11 +106,11 @@
     /* height: 30%; */
 }
 
-.about_AJYCM_project_article_right_image_container2_P1{
+.about_AJYCM_project_article_right_image_container2_P1 {
     text-align: center;
 }
 
-.about_AJYCM_project_article_right_image_container2_P1_Span{
+.about_AJYCM_project_article_right_image_container2_P1_Span {
     font-weight: lighter;
     font-size: 14px;
 }
@@ -234,7 +234,7 @@
 
 .about_card_img {
     width: 100%;
-    height: auto;
+    /* height: auto; */
 }
 
 .about_card_name_committe_wrapper {
@@ -242,7 +242,8 @@
     height: 30%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 10px;
+    /* justify-content: center; */
 }
 
 .about_card_name_committe_H2 {
@@ -251,6 +252,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     line-height: 21.09px;
+    margin-top: 10px;
 }
 
 .about_card_name_committe_P {

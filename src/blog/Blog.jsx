@@ -16,20 +16,20 @@ const Blog = () => {
     window.scrollTo(0, 0);
   }, [img]);
 
-  const BlogCard = (props) => {
-    return (
-      <div className='blog_card_body'>
-        <div className='blog_card_image_holder'>
-          <img src={blog2} alt="" />
-        </div>
-        <div className='blog_write_holder'>
-          <h1 className='blog_write_holder_h1'>{props.h1}</h1>
-          <p className='blog_write_holder_p'>{props.p}</p>
-          <h2 className='blog_write_holder_h2'>{props.btn}</h2>
-        </div>npmrun
-      </div>
-    )
-  }
+  // const BlogCard = (props) => {
+  //   return (
+  //     <div className='blog_card_body'>
+  //       <div className='blog_card_image_holder'>
+  //         <img src={blog2} alt="" />
+  //       </div>
+  //       <div className='blog_write_holder'>
+  //         <h1 className='blog_write_holder_h1'>{props.h1}</h1>
+  //         <p className='blog_write_holder_p'>{props.p}</p>
+  //         <h2 className='blog_write_holder_h2'>{props.btn}</h2>
+  //       </div>npmrun
+  //     </div>
+  //   )
+  // }
 
 
 

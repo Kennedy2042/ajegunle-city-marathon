@@ -1,7 +1,7 @@
 import './LandingPage.css'
 import './LandingPageRes.css'
 import { IoTrophyOutline } from 'react-icons/io5'
-import image2 from '../assets/image2.png'
+import image2 from '../assets/runImg.jpg'
 import image3 from '../assets/image3.png'
 import image4 from '../assets/readyNew.png'
 import arctIcon from '../assets/arcticons_lets-go-fitness.png'

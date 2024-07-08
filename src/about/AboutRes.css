@@ -125,7 +125,18 @@
         width: 80%;
     }
 
+    .about_card_name_committe_wrapper{
+        padding-top: 2px;
+    }
 
+    .about_card_name_committe_H2{
+        margin-top: 0px;
+        line-height: 16px;
+    }
+
+.about_card_name_committe_P{
+    font-size: 10px;
+}
 
 
 
