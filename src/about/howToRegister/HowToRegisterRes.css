@@ -1,0 +1,29 @@
+@media screen and (max-width: 576px) {
+
+    .how_to_register_article_section_wrapper{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+
+    .how_to_register_article_section_wrapper{
+        flex-direction: column;
+    }
+
+    .how_to_register_article_section_wrapper_img_container{
+        width: 100%;
+    }
+
+    .how_to_register_article_section_wrapper_article_container{
+        width: 100%;
+    }
+
+    .how_to_register_article_section_wrapper_article_container_H1a{
+        font-size: 24px;
+    }
+
+    .how_to_register_article_section_wrapper_article_container_H1b{
+        font-size: 24px;
+    }
+
+
+}

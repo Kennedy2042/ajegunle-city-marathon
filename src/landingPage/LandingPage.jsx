@@ -26,7 +26,7 @@ import sponsor10 from '../assets/sponsor10.jpg'
 import sponsor11 from '../assets/sponsor11.jpg'
 import sponsor12 from '../assets/sponsor12.png'
 import { GoArrowRight } from 'react-icons/go'
-import { NavLink, useNavigate} from 'react-router-dom'
+import { Link, NavLink, useNavigate} from 'react-router-dom'
 
 
 
@@ -92,7 +92,7 @@ const LandingPage = () => {
                     <img src={props.pix} alt="link logo" className='landing_ready_card_img' />
                 </div>
                 <div className="landing_ready_card_holder" style={{ backgroundColor: props.bg }}>
-                    <a href={props.tag} className='landing_ready_card_A'>{props.link}</a>
+                    <Link to={props.tag} className='landing_ready_card_A'>{props.link}</Link>
                 </div>
             </div>
         )
@@ -180,7 +180,7 @@ const LandingPage = () => {
                     <div className="landing_ready_wrapper">
                         <h1 className='landing_ready_wrapper_h1'>Are you ready ?</h1>
                         <div className="landing_ready_wrapper_card_contain">
-                            <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' tag={"https://paystack.com/pay/usjyu5o2ri"} />
+                            <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' tag={"/register"} />
                             <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' tag={"https://paystack.com/buy/PROD_vxkwxr3edops7u9"} />
                             <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' tag={"https://paystack.com/pay/o7t1hpl2mt"}/>
                         </div>
