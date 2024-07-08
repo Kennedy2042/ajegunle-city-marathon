@@ -168,8 +168,8 @@ const LandingPage = () => {
             <div className="landing_body">
                 <div className="landing_hero">
                     <div className="landing_hero_wrapper">
+                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH MARATHON, 2024”</h1>
                         <h2 className='landing_hero_wrapper_h2'>...Building Peaceful and cohesive communities.</h2>
-                        <h1 className='landing_hero_wrapper_h1'>“AJEGUNLE CITY YOUTH <br /> MARATHON, 2024”</h1>
                         <p className='landing_hero_wrapper_p'>ACYM2024 THEME: “Creating a Peaceful and Eco-friendly Environment for an Expanded Meaningful Youth Engagement through Sports.”</p>
                         <div className="landing_hero_btn_holder">
                             <button className='landing_hero_btn'><NavLink to={"/register"} className={"landing_hero_btn_navLink"}>Register now</NavLink></button>
