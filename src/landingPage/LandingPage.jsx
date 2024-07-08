@@ -30,6 +30,7 @@ import { NavLink, useNavigate} from 'react-router-dom'
 
 
 
+
 export const RoadMap = () => {
     return (
         <div className="landing_road_map">
@@ -38,6 +39,40 @@ export const RoadMap = () => {
             </div>
             <div className="landing_road_map_img_container">
                 <img src={map} alt="" />
+            </div>
+        </div>
+    )
+}
+
+export const Newscard = ({img, H4, Span, content }) => {
+    const nav = useNavigate()
+
+
+    const handleClick = () => {
+        nav('/blog', {
+            state: {
+                img, H4, Span, content 
+            },
+        });
+    };
+
+
+
+    return (
+        <div className='landing_news_card'>
+            <div className="landing_news_img_container">
+                <img src={img} alt="" />
+            </div>
+            <div className="landing_news_article">
+                <div className="landing_news_article_header">
+                    <h4 className='landing_news_article_header_h4'>{H4} <span className='landing_news_article_header_span'>{Span}</span></h4>
+                </div>
+                <div className="landing_news_article_content">
+                    {content}
+                </div>
+                <div className="landing_news_article_btn">
+                    <button className='landing_news_article_btn_span' onClick={handleClick}>View all <GoArrowRight /></button>
+                </div>
             </div>
         </div>
     )
@@ -57,7 +92,7 @@ const LandingPage = () => {
                     <img src={props.pix} alt="link logo" className='landing_ready_card_img' />
                 </div>
                 <div className="landing_ready_card_holder" style={{ backgroundColor: props.bg }}>
-                    <a href="" className='landing_ready_card_A'>{props.link}</a>
+                    <a href={props.tag} className='landing_ready_card_A'>{props.link}</a>
                 </div>
             </div>
         )
@@ -125,38 +160,7 @@ const LandingPage = () => {
 
 
 
-    const Newscard = ({img, H4, Span, content }) => {
 
-
-        const handleClick = () => {
-            nav('/blog', {
-                state: {
-                    img, H4, Span, content 
-                },
-            });
-        };
-
-
-
-        return (
-            <div className='landing_news_card'>
-                <div className="landing_news_img_container">
-                    <img src={img} alt="" />
-                </div>
-                <div className="landing_news_article">
-                    <div className="landing_news_article_header">
-                        <h4 className='landing_news_article_header_h4'>{H4} <span className='landing_news_article_header_span'>{Span}</span></h4>
-                    </div>
-                    <div className="landing_news_article_content">
-                        {content}
-                    </div>
-                    <div className="landing_news_article_btn">
-                        <button className='landing_news_article_btn_span' onClick={handleClick}>View all <GoArrowRight /></button>
-                    </div>
-                </div>
-            </div>
-        )
-    }
 
 
     return (
@@ -176,9 +180,9 @@ const LandingPage = () => {
                     <div className="landing_ready_wrapper">
                         <h1 className='landing_ready_wrapper_h1'>Are you ready ?</h1>
                         <div className="landing_ready_wrapper_card_contain">
-                            <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' />
-                            <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' />
-                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' />
+                            <ReadyCard pix={image2} link='Click here to Register for to participate at the Ajegunle City Youth Marathon, 2024' bg='rgba(23, 183, 136, 1)' tag={"https://paystack.com/pay/usjyu5o2ri"} />
+                            <ReadyCard pix={image3} link='Click here to purchases a raffle tickets and stand a chance to win awesome prizes at the raffle draw event.' bg='rgba(122, 144, 249, 1)' tag={"https://paystack.com/buy/PROD_vxkwxr3edops7u9"} />
+                            <ReadyCard pix={image4} link='Click here to place an order for your T-Shirt & Face Cap to support the Ajegunle City Youth Marathon Project.' bg='rgba(23, 150, 183, 1)' tag={"https://paystack.com/pay/o7t1hpl2mt"}/>
                         </div>
                     </div>
                 </div>

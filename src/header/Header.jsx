@@ -33,7 +33,8 @@ const Header = () => {
                     {
                         routes.map((route)=>(
                             <li key={route.path}>
-                                <NavLink to={route.path} className={'menu_not_active'}>{route.name}</NavLink>
+                                <NavLink to={route.path} className={'menu_not_active'} >{route.name}</NavLink>
+
                             </li>
                         ))
                     }
@@ -57,7 +58,9 @@ const Header = () => {
                         {
                         routes.map((route)=>(
                             <li key={route.path}>
-                                <NavLink to={route.path} className={'menu_not_active'}>{route.name}</NavLink>
+                                <NavLink to={route.path} className={'menu_not_active'} onClick={()=>{
+                                    setMenu(false)
+                                }}>{route.name}</NavLink>
                             </li>
                         ))
                     }
