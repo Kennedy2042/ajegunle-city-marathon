@@ -24,7 +24,7 @@ const Footer = () => {
                     <li><NavLink className={'menu_not_active'}>AJCYM Project</NavLink></li>
                     <li><NavLink className={'menu_not_active'}>Local Organising Committee</NavLink></li>
                 </ul>
-                <ul>
+                {/* <ul>
                     <li>Get Involved</li>
                     <li><NavLink className={'menu_not_active'}>Register for Race</NavLink></li>
                     <li><NavLink className={'menu_not_active'}>Volunteer</NavLink></li>
@@ -32,7 +32,7 @@ const Footer = () => {
                     <li><NavLink className={'menu_not_active'}>Become a sponsor</NavLink></li>
                     <li><NavLink className={'menu_not_active'}>Partner with us</NavLink></li>
                     <li><NavLink className={'menu_not_active'}>Donate</NavLink></li>
-                </ul>
+                </ul> */}
                 <ul>
                     <li>Resources</li>
                     <li><NavLink to={'/health_tips'} className={'menu_not_active'}>Health Tips</NavLink></li>

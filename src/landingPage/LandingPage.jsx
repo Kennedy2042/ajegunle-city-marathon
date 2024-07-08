@@ -34,12 +34,21 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 export const RoadMap = () => {
     return (
         <div className="landing_road_map">
-            <div className="landing_road_map_title">
+            {/* <div className="landing_road_map_title">
                 Route Map for Ajegunle City Youth Marathon
             </div>
             <div className="landing_road_map_img_container">
                 <img src={map} alt="" />
-            </div>
+            </div> */}
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.222631862073!2d3.352426541093896!3d6.443926885278919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bcc76eaf46b%3A0xe296700d8fa9e6f2!2sAjegunle%2C%20Ikeja%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720429094726!5m2!1sen!2sng"
+                width="100%"
+                height="600"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+            />
         </div>
     )
 }
@@ -210,16 +219,8 @@ const LandingPage = () => {
 
                 </div>
                 <div className="landing_page_map_container">
-                    {/* <RoadMap /> */}
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.222631862073!2d3.352426541093896!3d6.443926885278919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bcc76eaf46b%3A0xe296700d8fa9e6f2!2sAjegunle%2C%20Ikeja%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720429094726!5m2!1sen!2sng"
-                        width="100%"
-                        height="600"
-                        style={{ border: 0 }}
-                        allowFullScreen=""
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                    />
+                    <RoadMap />
+
                 </div>
                 <div className="landing_meet_sponsor">
                     <h1 className='landing_meet_sponsor_h1'>Meet our sponsors and partners</h1>

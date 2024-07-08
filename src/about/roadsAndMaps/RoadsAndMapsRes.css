@@ -26,6 +26,8 @@
     .roads_and_map_mainBody_article_section_wrapper_article_image{
         height: 30vh;
         margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: none;
     }
 
 }

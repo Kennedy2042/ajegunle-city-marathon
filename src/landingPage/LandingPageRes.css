@@ -172,7 +172,8 @@
     }
 
     .landing_road_map {
-        height: 35vh;
+        /* height: 35vh; */
+        margin: 50px 0px;
     }
 
     .landing_road_map_title {
