@@ -251,7 +251,7 @@ const LandingPage = () => {
                             content={"Are you passionate about empowering youth and promoting fitness, healthy living while advocating for positive change in the community? Join us as a volunteer for the Ajegunle City Youth Marathon, 2024 event and be a part of something extraordinary!"}
                         />
                     </div>
-                    <btn className="landing_news_view_more_btn">View more post</btn>
+                    <btn className="landing_news_view_more_btn" onClick={()=>nav("/blog")}>View more post</btn>
                 </div>
                 <div className="landing_become_a_sponsor">
                     <div className="landing_become_a_sponsor_wrapper">
