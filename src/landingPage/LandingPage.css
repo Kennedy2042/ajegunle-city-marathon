@@ -254,11 +254,11 @@
     width: 90%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .landing_price_category_wrapper {
-    width: 55%;
+    width: 90%;
     height: 95%;
     display: flex;
     align-items: center;
@@ -266,7 +266,7 @@
 }
 
 .landing_price_card {
-    width: 29%;
+    width: 20%;
     height: 55%;
     border-radius: 10px;
     display: flex;

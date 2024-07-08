@@ -34,12 +34,6 @@ import { Link, NavLink, useNavigate } from 'react-router-dom'
 export const RoadMap = () => {
     return (
         <div className="landing_road_map">
-            {/* <div className="landing_road_map_title">
-                Route Map for Ajegunle City Youth Marathon
-            </div>
-            <div className="landing_road_map_img_container">
-                <img src={map} alt="" />
-            </div> */}
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7929.222631862073!2d3.352426541093896!3d6.443926885278919!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8bcc76eaf46b%3A0xe296700d8fa9e6f2!2sAjegunle%2C%20Ikeja%20102272%2C%20Lagos!5e0!3m2!1sen!2sng!4v1720429094726!5m2!1sen!2sng"
                 width="100%"
@@ -211,6 +205,7 @@ const LandingPage = () => {
                 <div className="landing_price_category">
                     <div className="landing_price_price_container">
                         <div className="landing_price_category_wrapper">
+                            <PriceWon icon='&#8358;' title='Join The Race' article='The  Marathon goes beyond a race. It is one way to get inspired.' bg='rgba(23, 183, 136, 1)' />
                             <PriceWon icon='&#8358;' title='N300k To Be Won' article='About 300,000 naira is available to be won by contestants.' bg='rgba(23, 183, 136, 1)' />
                             <PriceWon icon={<IoTrophyOutline />} title='Amazing Prizes' article='Complementary prices are  up for grabs.' bg='rgba(23, 150, 183, 1)' />
                             <PriceWon icon={<FitImage />} title='Stay Fit' article='As race day gets closer, you should also begin to fine-tune some aspects of your diet.' bg='rgba(52, 103, 245, 1)' />
