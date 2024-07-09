@@ -193,7 +193,7 @@
 
 .landing_category_card {
     width: 24%;
-    min-height: 75vh;
+    height: 85vh;
     background: #ffff;
     display: flex;
     flex-direction: column;
@@ -208,7 +208,7 @@
 
 .landing_category_card_currency_div {
     width: 20%;
-    height: 8.4vh;
+    height: 7.8vh;
     background: rgba(217, 217, 217, 0.4);
     font-size: 24px;
     border-radius: 50%;
