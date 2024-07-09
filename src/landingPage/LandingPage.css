@@ -463,7 +463,7 @@
     font-size: 14px;
     line-height: 21px;
     color: rgba(38, 38, 38, 1);
-    overflow: auto;
+    overflow: hidden;
 }
 
 .landing_news_article_btn {
@@ -483,6 +483,7 @@
     cursor: pointer;
     border: none;
     background: none;
+    display: flex;
 }
 
 .landing_news_view_more_btn {
